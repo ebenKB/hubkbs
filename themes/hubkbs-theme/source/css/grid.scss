@@ -1,0 +1,104 @@
+// variables
+$one: 1;
+$two:2;
+$three:3;
+$four: 4;
+$five: 5;
+$six: 6;
+$seven: seven;
+$eight: 8;
+$nine: 9;
+$ten: 10;
+$eleven: 11;
+$twelve: 12;
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+  }
+}
+
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+  }
+}
+
+/* wrap all grid items in this parent */
+.grid-gap_#{$ten}{
+  grid-gap: #{$ten}px;
+}
+
+// DEFINE -- grid columns here
+
+.grid-ui {
+  .equal-columns_#{$two} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equal-columns_#{$three} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .equal-columns_#{$four} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .equal-columns_#{$five} {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .equal-columns_#{$six} {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .equal-columns_#{$seven} {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .equal-columns_#{$eight} {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .equal-columns_#{$nine} {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .equal-columns_#{$ten} {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .equal-columns_#{$eleven} {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .equal-columns_#{$twelve} {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .equal-columns_auto {
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr))
+  }
+}
+
+@media only screen and(max-width:780px) {
+  // .grid {
+  //   grid-template-columns: repeat(auto-fit, minmax(200, 1fr))
+  // }
+
+  .grid-ui {
+    .equal-columns_#{$two},
+    .equal-columns_#{$three},
+    .equal-columns_#{$four},
+    .equal-columns_#{$five},
+    .equal-columns_#{$six},
+    .equal-columns_#{$seven},
+    .equal-columns_#{$eight},
+    .equal-columns_#{$nine},
+    .equal-columns_#{$ten},
+    .equal-columns_#{$eleven},
+    .equal-columns_#{$twelve} {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+  }
+}

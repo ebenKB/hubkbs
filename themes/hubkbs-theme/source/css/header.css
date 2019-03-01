@@ -1,0 +1,40 @@
+.nav-item .dropdown {
+  top:90%;
+  display: none;
+	font-size: 12px;
+	position: absolute;
+	border-radius: 2.5px;
+	left: -50%;
+	min-width: max-content;
+	min-width: intrinsic;
+  min-width: -moz-max-content;
+  width: -webkit-max-content;
+	max-width: 500px;
+	background-color: var(--app-white);
+	opacity: 0;
+	text-align: left;
+	visibility: hidden;
+	color: var(--dark);
+	transition: all 0.135s ease-in-out 0s;
+	border: 1px solid rgba(216, 213, 213, 0.3);
+}
+
+.nav-item .dropdown::before {
+  background: red;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border: 1px solid rgba(216, 213, 213, 0.5);
+  z-index: -1;
+  left: 95px;
+}
+
+.nav-item:hover .dropdown{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}

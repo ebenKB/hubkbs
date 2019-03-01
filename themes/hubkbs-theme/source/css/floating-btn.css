@@ -1,0 +1,15 @@
+.to-top {
+  position: fixed;
+  width: 45px;
+  height: 50px;
+  right: 20px;
+  bottom: 5px;
+}
+
+.to-top img {
+  width: 35px;
+  opacity: 0.6;
+  cursor: pointer;
+  outline: 0;
+  position: fixed;
+}

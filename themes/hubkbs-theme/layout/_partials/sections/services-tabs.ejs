@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="tab-container grid-ui">
+    <ul class="grid equal-columns_auto">
+      <% if(type.toLowerCase() == 'citation'){%>
+        <li class="tab-item">
+            <a href="#" class="active">
+              <span class="tab-index">1</span>
+              <span class="tab-title">Citations</span>
+            </a>
+        </li>
+      <%} else{%>
+        <li class="tab-item">
+            <a href="/citation">
+              <span class="tab-index">1</span>
+              <span class="tab-title">Citations</span>
+            </a>
+        </li>
+      <%}%>
+
+      <% if(type.toLowerCase() == 'research'){%>
+          <li class="tab-item">
+              <a href="/research" class="active">
+                <span class="tab-index">2</span>
+                <span class="tab-title">Research</span>
+              </a>
+          </li>
+        <%} else{%>
+          <li class="tab-item">
+            <a href="/research">
+              <span class="tab-index">2</span>
+              <span class="tab-title">Research</span>
+            </a>
+          </li>
+        <%}%>
+
+        <% if(type.toLowerCase() == 'software'){%>
+        <li class="tab-item">
+            <a href="/software" class="active">
+              <span class="tab-index">3</span>
+              <span class="tab-title">Software</span>
+            </a>
+        </li>
+        <%} else{%>
+          <li class="tab-item">
+              <a href="/software">
+                <span class="tab-index">3</span>
+                <span class="tab-title">Software</span>
+              </a>
+            </li>
+        <%}%>
+
+        <% if(type.toLowerCase() == 'press'){%>
+          <li class="tab-item">
+              <a href="/press" class="active">
+                <span class="tab-index">4</span>
+                <span class="tab-title">Press</span>
+              </a>
+          </li>
+        <%} else{%>
+          <li class="tab-item">
+              <a href="/press">
+                <span class="tab-index">4</span>
+                <span class="tab-title">Press</span>
+              </a>
+          </li>
+        <%}%>
+    </ul>
+  </div>
+</div>

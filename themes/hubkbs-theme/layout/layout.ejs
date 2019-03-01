@@ -1,15 +1,17 @@
-<%- partial('_partial/header/head') %>
-<body>
+<%- partial('_partials/header/head') %>
+<body id="home">
   <div class="wrapper">
     <header>
-        <%- partial('_partial/header/header') %>
+        <%- partial('_partials/header/header') %>
     </header>
     <main>
         <%- body %>
     </main>
 
+    <%- partial('_partials/floating-btn')%>
    <footer>
-      <%- partial('_partial/footer') %>
+      <%- partial('_partials/footer') %>
    </footer>
   </div>
 </body>
+</html>

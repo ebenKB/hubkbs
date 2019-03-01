@@ -1,0 +1,19 @@
+.sections-brief {
+  background: var(--app-secondary);
+  margin-top: -16px;
+}
+
+.sections-brief ul {
+  text-align: center;
+}
+
+.sections-brief ul li {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.sections-brief ul li a {
+  color: var(--app-white);
+}
