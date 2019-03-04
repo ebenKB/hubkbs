@@ -1,0 +1,16 @@
+.course-container {
+    min-height: 300px;
+
+}
+
+.course-item {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    min-height: 200px;
+}
+
+.course-item:hover {
+    transform: scale(1.025)
+}

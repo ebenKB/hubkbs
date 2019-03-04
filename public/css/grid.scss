@@ -11,6 +11,11 @@ $nine: 9;
 $ten: 10;
 $eleven: 11;
 $twelve: 12;
+$thirteen: 13;
+$fourteen: 14;
+$fifteen: 15;
+$sixteen: 16;
+
 
 @supports (display: grid) {
   .grid {
@@ -29,9 +34,10 @@ $twelve: 12;
   grid-gap: #{$ten}px;
 }
 
-// DEFINE -- grid columns here
+// DEFINE -- equal grid columns here
 
 .grid-ui {
+  
   .equal-columns_#{$two} {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -76,16 +82,79 @@ $twelve: 12;
     grid-template-columns: repeat(12, 1fr);
   }
 
+  .equal-columns_#{$thirteen} {
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  .equal-columns_#{$fourteen} {
+    grid-template-columns: repeat(14, 1fr);
+  }
+
+  .equal-columns_#{$fifteen} {
+    grid-template-columns: repeat(15, 1fr);
+  }
+
+  .equal-columns_#{$sixteen} {
+    grid-template-columns: repeat(16, 1fr);
+  }
+
   .equal-columns_auto {
-    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr))
+    grid-template-columns:  repeat(auto-fit, minmax(20%, 1fr));
+  }
+
+  .small-equal-columns_auto {
+    grid-template-columns:  repeat(auto-fit, minmax(15%, 1fr));
+  }
+
+  .medium-equal-columns_auto {
+    grid-template-columns:  repeat(auto-fit, minmax(25%, 1fr));
+  }
+
+  .large-equal-columns_auto {
+    grid-template-columns:  repeat(auto-fit, minmax(33.33%, 1fr));
+  }
+
+  .extra-large-equal-columns_auto {
+    grid-template-columns:  repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+}
+
+// DEFINE -- unequal grid columns here
+
+.grid-ui  {
+  .grid {
+    .two {
+      // grid-area: 1/0/auto/2;
+      grid-area: 1 / 1 / auto / 3 ;
+      background: red;
+    }
+  
+    .three {
+      // grid area shorthand -- grid-row-start, grid-column-start, grid-row-end and grid-column-end
+      grid-area: 1 / 2 / 1 / 5;
+      background: blue;
+    }
+  }
+}
+
+// GRID -- rows 
+
+.grid-ui {
+  .grid {
+    .rows_#{$two} {
+      grid-template-rows: #{$two};
+      grid-row-gap: 10px;
+    }
+
+    .rows_#{$four} {
+      grid-template-rows: #{$four};
+      grid-row-gap: 10px;
+    }
   }
 }
 
 @media only screen and(max-width:780px) {
-  // .grid {
-  //   grid-template-columns: repeat(auto-fit, minmax(200, 1fr))
-  // }
-
   .grid-ui {
     .equal-columns_#{$two},
     .equal-columns_#{$three},
@@ -99,6 +168,9 @@ $twelve: 12;
     .equal-columns_#{$eleven},
     .equal-columns_#{$twelve} {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-row-gap: 20px;
       }
   }
+
+
 }
