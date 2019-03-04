@@ -1,25 +1,47 @@
 .nav-item .dropdown {
-  top:90%;
+  top: 90%;
   display: none;
-	font-size: 12px;
-	position: absolute;
-	border-radius: 2.5px;
-	left: -50%;
-	min-width: max-content;
-	min-width: intrinsic;
+  font-size: 12px;
+  position: absolute;
+  border-radius: 2.5px;
+  left: -50%;
+  right: -50%;
+  min-width: max-content;
+  min-width: intrinsic;
   min-width: -moz-max-content;
   width: -webkit-max-content;
-	max-width: 500px;
-	background-color: var(--app-white);
-	opacity: 0;
-	text-align: left;
-	visibility: hidden;
-	color: var(--dark);
-	transition: all 0.135s ease-in-out 0s;
-	border: 1px solid rgba(216, 213, 213, 0.3);
+  max-width: 500px;
+  background-color: var(--app-white);
+  opacity: 0;
+  text-align: left;
+  visibility: hidden;
+  color: var(--dark);
+  transition: all 0.135s ease-in-out 0s;
+  border: 1px solid rgba(216, 213, 213, 0.5);
 }
 
-.nav-item .dropdown::before {
+.nav-item .company-dropdown {
+  left: 10%;
+  right: -100%;
+}
+.dropdown .dropdown-container {
+  padding: 25px;
+}
+
+.dropdown ul {
+  padding-inline-start: 0;
+  /* padding: 10px; */
+  margin-top: 5px;
+}
+
+.nav-item .dropdown ul li {
+  padding: 15px;
+}
+
+.nav-item .dropdown ul li:hover {
+  color: var(--app-secondary);
+}
+/* .nav-item .dropdown::before {
   background: red;
   position: absolute;
   right: 0;
@@ -31,10 +53,72 @@
   border: 1px solid rgba(216, 213, 213, 0.5);
   z-index: -1;
   left: 95px;
+} */
+
+.nav-item::after {
+  display: none;
+  background: var(--app-white);
+  position: absolute;
+  right: 0;
+  top: 75%;
+  content: ' ';
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  border-top: 1px solid rgba(216, 213, 213, 0.5);
+  border-left: 1px solid rgba(216, 213, 213, 0.5);
+  /* z-index: -1; */
+  left: 45%;
+  right: 100%;
+}
+
+.nav-item:hover::after {
+  display: block;
 }
 
 .nav-item:hover .dropdown{
   display: block;
   visibility: visible;
   opacity: 1;
+}
+
+/* .nav-item .nav-links {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+} */
+
+.nav-item .nav-links .link-item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.nav-item .nav-links .link-item .link-sub_caption {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--app-default);
+}
+
+.nav-item .nav-links .link-item .link-caption {
+  font-weight: 900;
+}
+
+.nav-item .nav-links .link-item .link-image {
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  background: var(--app-icon-bg);
+}
+
+.nav-item .nav-links .link-item .link-image img {
+  width: 17px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.nav-item .nav-links .link-item:hover .link-image {
+  background: var(--app-icon-bg-light);
 }
