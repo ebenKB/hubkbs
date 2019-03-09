@@ -12,7 +12,8 @@
 }
 
 .tab-container ul {
-  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .tab-item {
@@ -56,3 +57,4 @@
   padding-top: 7.5px;
   text-align: center
 }
+/*# sourceMappingURL=tabs.css.map */

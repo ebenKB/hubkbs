@@ -12,5 +12,7 @@
 }
 
 .course-item:hover {
-    transform: scale(1.025)
+    -webkit-transform: scale(1.025);
+            transform: scale(1.025)
 }
+/*# sourceMappingURL=training.css.map */

@@ -16,7 +16,7 @@
 
 .cta {
   position: absolute;
-  width: 250px;
+  width: 260px;
   /* height: 30px; */
   line-height: 30px;
   text-align: center;
@@ -38,3 +38,5 @@
 .default {
   background: var(--app-default);
 }
+
+/*# sourceMappingURL=button.css.map */

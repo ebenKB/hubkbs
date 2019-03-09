@@ -6,9 +6,13 @@
     "version": "3.8.0"
   },
   "scripts": {
-    "sass": "sass --watch ./themes/hubkbs-theme/source/css/:./themes/hubkbs-theme/source/css"
+    "sass": "sass --watch ./themes/hubkbs-theme/source/css/:./themes/hubkbs-theme/source/css",
+    "build": "gulp autoprefixer"
   },
   "dependencies": {
+    "autoprefixer": "^9.4.10",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
     "hexo": "^3.7.0",
     "hexo-deployer-heroku": "^0.1.2",
     "hexo-generator-archive": "^0.1.5",
@@ -21,6 +25,9 @@
     "hexo-server": "^0.3.3"
   },
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0"
   }
 }

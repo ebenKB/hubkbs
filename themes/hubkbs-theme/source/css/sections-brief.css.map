@@ -1,7 +1,1 @@
-{
-"version": 3,
-"mappings": "AAAA,eAAgB;EACd,UAAU,EAAE,oBAAoB;EAChC,UAAU,EAAE,KAAK;;AAGnB,kBAAmB;EACjB,UAAU,EAAE,MAAM;;AAGpB,qBAAsB;EACpB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM;EAClB,YAAY,EAAE,IAAI;;AAGpB,uBAAwB;EACtB,KAAK,EAAE,gBAAgB",
-"sources": ["sections-brief.scss"],
-"names": [],
-"file": "sections-brief.css"
-}
+{"version":3,"sources":["sections-brief.scss","sections-brief.css"],"names":[],"mappings":"AAAA;EACE,gCAAgC;EAChC,iBAAiB,EAAA;;AAGnB;EACE,kBAAkB,EAAA;;AAGpB;EACE,qBAAqB;EACrB,aAAa;EACb,kBAAkB;EAClB,kBAAkB,EAAA;;AAGpB;EACE,uBAAuB,EAAA;;ACDzB,6CAA6C","file":"sections-brief.css","sourcesContent":[".sections-brief {\n  background: var(--app-secondary);\n  margin-top: -16px;\n}\n\n.sections-brief ul {\n  text-align: center;\n}\n\n.sections-brief ul li {\n  display: inline-block;\n  padding: 20px;\n  text-align: center;\n  margin-right: 20px;\n}\n\n.sections-brief ul li a {\n  color: var(--app-white);\n}\n",".sections-brief {\n  background: var(--app-secondary);\n  margin-top: -16px; }\n\n.sections-brief ul {\n  text-align: center; }\n\n.sections-brief ul li {\n  display: inline-block;\n  padding: 20px;\n  text-align: center;\n  margin-right: 20px; }\n\n.sections-brief ul li a {\n  color: var(--app-white); }\n\n/*# sourceMappingURL=sections-brief.css.map */\n"]}

@@ -8,7 +8,7 @@ window.onload = function() {
 
 // add scroll animation for all scrollable elements
 $("document").ready(() => {
-  scroll('to-offering', 'offerings', 800);
+  scroll('to-offering', 'offerings', 500);
   scroll('to-top', 'home', 1000);
   scroll('to-citation', 'citation', 800);
 });

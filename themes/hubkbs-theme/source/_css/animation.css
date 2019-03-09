@@ -1,0 +1,30 @@
+@import './variables.css';
+
+@keyframes popup {
+	0%{
+		transform: scale(1);
+	}
+
+	50%{
+		transform: scale(1.4);
+	}
+
+	75% {
+		transform: scale(1.3);
+	}
+
+	100%{
+		transform: scale(1.2);
+	}
+}
+
+@keyframes addColour {
+	0% {
+		background:  var( --app-white);
+	}
+
+	100% {
+		background: var(--app-secondary);
+		color: var( --app-white);
+	}
+}
