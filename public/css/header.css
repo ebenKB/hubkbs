@@ -24,6 +24,7 @@
 .nav-item .company-dropdown {
   left: 10%;
   right: -100%;
+  min-width: 120px;
 }
 .dropdown .dropdown-container {
   padding: 25px;
