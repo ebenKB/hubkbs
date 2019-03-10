@@ -1,67 +1,58 @@
 const gulp      = require('gulp');
 var postcss      = require('gulp-postcss');
-var sourcemaps   = require('gulp-sourcemaps');
-var autoprefixer = require('autoprefixer');
-// const babel     = require('gulp-babel');
-// const connect   = require('gulp-connect');
-
-// gulp.task('js', () =>
-// 	gulp.src('src/app.js')
-// 		.pipe(babel({
-// 			presets: ['@babel/env']
-// 		}))
-// 		.pipe(gulp.dest('dist/assets/js'))
-// );
+const sourcemaps   = require('gulp-sourcemaps');
+const autoprefixer = require('autoprefixer');
+const { series, parallel } = require('gulp');
+const uglify = require ('gulp-uglify');
 
 
-// gulp.task('connect', function() {
-//   connect.server({
-//     root: 'dist',
-//     livereload: true
-//   });
+// gulp.task('autoprefixer', function () {
+//     return gulp.src('./themes/hubkbs-theme/source/_css/*.css')
+//     .pipe(sourcemaps.init())
+//     .pipe(postcss([ autoprefixer() ]))
+//     .pipe(sourcemaps.write('.'))
+//     .pipe(gulp.dest('./themes/hubkbs-theme/source/css'));
 // });
 
+// gulp.task(['autoprefixer']);
 
-// gulp.task('css', function () {
-//     gulp.src('./assets/*.css')
+function clean(cb) {
+    // remove old files here
 
-//       .pipe(gulp.dest('./dist/assets/css'))
-//       .pipe(connect.reload());
-// });
+    cb();
+}
 
-// gulp.task('images', function () {
-//     gulp.src('./assets/images/*.*')
-//       .pipe(gulp.dest('./dist/assets/images'))
-//       .pipe(connect.reload());
-// });
+function livereload(cb) {
 
+    cb();
+}
 
-// gulp.task('html', function () {
-//   gulp.src('./src/*.html')
-//     .pipe(gulp.dest('./dist'))
-//     .pipe(connect.reload());
-// });
+function isJavascript(file) {
+    return file.extname =='.js';
+}
 
-// gulp.task('video',function(){
-//   gulp.src('./assets/video/*.mp4')
-//   .pipe(gulp.dest('./dist/assets/video'))
-//   .pipe(connect.reload());
-// });
+function jsMinify(cb) {
+    // include js and css files in a single pipeline
+    //  gulp.src('./themes/hubkbs-theme/source/_js/*.js')
+    // .pipe(uglify())
+    // .pipe(gulp.dest('./themes/hubkbs-theme/source/js'))
+    cb();
+}
 
-// gulp.task('font',function(){
-//   gulp.src('./assets/fonts/*.*')
-//   .pipe(gulp.dest('./dist/assets/fonts'))
-//   .pipe(connect.reload());
-// })
+function cssMinify(cb) {
+    cb();
+}
 
-
-gulp.task('autoprefixer', function () {
-    return gulp.src('./themes/hubkbs-theme/source/_css/*.css')
+function build(cb) {
+    gulp.src('./themes/hubkbs-theme/source/_css/*.css')
     .pipe(sourcemaps.init())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./themes/hubkbs-theme/source/css'));
-});
+    cb();
+}
 
-gulp.task( ['autoprefixer']);
 
+exports.build = series(clean, parallel(build, cssMinify, jsMinify));
+
+// exports.default = defaultTask

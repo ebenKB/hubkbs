@@ -28,3 +28,8 @@
 		color: var( --app-white);
 	}
 }
+
+.slide-out {
+	transform: translateX(100px);
+    transition: 0.5s ease-in-out;
+}

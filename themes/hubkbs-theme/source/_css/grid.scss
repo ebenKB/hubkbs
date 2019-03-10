@@ -154,7 +154,7 @@ $sixteen: 16;
   }
 }
 
-@media only screen and(max-width:780px) {
+@media only screen and(max-width:768px) {
   .grid-ui {
     .equal-columns_#{$two},
     .equal-columns_#{$three},
@@ -167,7 +167,7 @@ $sixteen: 16;
     .equal-columns_#{$ten},
     .equal-columns_#{$eleven},
     .equal-columns_#{$twelve} {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-row-gap: 20px;
       }
   }

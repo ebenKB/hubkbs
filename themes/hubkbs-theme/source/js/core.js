@@ -10,7 +10,11 @@ window.onload = function() {
 $("document").ready(() => {
   scroll('to-offering', 'offerings', 500);
   scroll('to-top', 'home', 1000);
-  scroll('to-citation', 'citation', 800);
+  scroll('to-citation', 'citation', 1000);
+  scroll('to-research', 'research', 1000);
+  scroll('to-data-analysis', 'data-analysis', 1000);
+  scroll('to-software', 'software', 1000);
+  scroll('to-printing', 'printing', 1000);
 });
 
 // Define a scroll function 
@@ -25,21 +29,36 @@ function scroll(id, to, delay) {
 
 
 
-$("document").ready(() =>{
+$("document").ready(() => {
 // scroll positions
 let last_known_scroll_position = 0;
 let current_pos = last_known_scroll_position;
 
 // add a scroll event listner
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
   last_known_scroll_position = current_pos;
   current_pos = window.scrollY;
   
-  window.requestAnimationFrame(() =>{
+  window.requestAnimationFrame(() => {
+    // scroll down
+    if (current_pos > last_known_scroll_position) {
+          // animate nav header 
+      if (current_pos >= 300) {
+        document.getElementById('site-header').classList.add('addColour')
+      }
+    } else {
+      // scroll up 
+      if (last_known_scroll_position - current_pos > 12) {
+        document.getElementById('site-header').classList.remove('addColour');
+      } else if (current_pos == 0) {
+        document.getElementById('site-header').classList.remove('addColour');
+      }
+    }
+
     // show floating button
     if(current_pos >= 700) {
-      document.getElementById('to-top').classList.remove('hide');
-    } else document.getElementById('to-top').classList.add('hide');
+      document.getElementById('to-top').classList.remove('slide-out');
+    } else document.getElementById('to-top').classList.add('slide-out');
   });
 });
 });

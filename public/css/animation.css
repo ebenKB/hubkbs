@@ -65,4 +65,10 @@
 		color: var( --app-white);
 	}
 }
+
+.slide-out {
+	-webkit-transform: translateX(100px);
+	        transform: translateX(100px);
+    transition: 0.5s ease-in-out;
+}
 /*# sourceMappingURL=animation.css.map */

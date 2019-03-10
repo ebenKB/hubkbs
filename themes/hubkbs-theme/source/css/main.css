@@ -1,4 +1,3 @@
-
 @import '../css/button.css';
 @import '../css/floating-btn.css';
 @import '../css/tabs.css';
@@ -8,7 +7,10 @@
 @import '../css/resources-util.css';
 @import '../css/training.css';
 @import '../css/resources-util.css';
+@import '../css/footer.css';
 @import '../css/grid.css';
+/* @import "../css/media-query.css" screen and (max-width: 768px); */
+
 
 :root {
   --app-primary:  #1395F1;
@@ -94,7 +96,6 @@ a, ul li{
 }
 
 #home .site-header {
-  background: #fff;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
   border: none;
   font-size: 14px
@@ -146,8 +147,8 @@ nav ul {
 }
 
 .addColour {
-  -webkit-animation: addColour 1s ease-in-out 0s 1 forwards normal;
-          animation: addColour 1s ease-in-out 0s 1 forwards normal;
+  -webkit-animation: addColour 0.5s ease-in-out 0s 1 forwards normal;
+          animation: addColour 0.5s ease-in-out 0s 1 forwards normal;
 }
 
 /* --end nav style */
@@ -214,11 +215,8 @@ nav ul {
 }
 
 .item-offerings__group {
-  /* margin-top: 90px; */
-  /* min-height: 320px; */
   margin-bottom: 80px;
   position: relative;
-  grid-template-columns: repeat(5, 1fr);
   -webkit-margin-start: 0px;
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
@@ -359,9 +357,9 @@ nav ul {
   -ms-layout-grid-type: 10px;
 }
 
-/* .uneq-grid .color{
-  background: green;
-} */
+.caption {
+  color: var(--app-font-caption-light);
+}
 
 .caption h4 {
   margin-bottom: 20px;
@@ -372,11 +370,11 @@ nav ul {
 
 .caption p,
 .item-wrap {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 25px;
   margin-bottom: 10px;
-  color: var(--app-font-caption-light);
 }
+
 
 .item-wrap dl a {
   color: inherit;
@@ -396,9 +394,8 @@ nav ul {
 
 /* start user account styling */
 .user-account {
-  height: 500px;
-  /* background:var(--app-primary); */
-  background: url(../images/bg/ic_bg.png) #4eaa6e
+  min-height: 500px;
+  background: url(../images/bg/ic_bg.png) #21a1eb
 }
 
 .user-form {
@@ -419,7 +416,10 @@ nav ul {
 }
 
 .user-account__text a {
+  position: relative;
+  width: 100%;
   text-decoration: none;
+  display: inline-block;
 }
 
 .user-account__text h4{
@@ -481,39 +481,106 @@ nav ul {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
-
 /* ene about page style */
-/* footer */
-footer {
-  min-height: 250px;
-  background: var(--app-gray);
-  padding: 20px;
-}
 
-footer .item-wrap {
-  color: var(--app-off-white);
-}
+/* START-- media caption here */
+  .media-caption {
+    min-height: 450px;
+    background: var(--app-default);
+    box-shadow: 1px 1px 1px 1px rgba(169, 160, 160, 0.5);
+  }
 
-footer .row .item-wrap p{
+  .media-caption .bg-image_cover {
+    background: url("https://images.unsplash.com/photo-1529636444744-adffc9135a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+
+  .quote-wrapper {
+    color: var(--app-white);
+    margin-top: 120px;
+    width: 70%;
+    margin-left: 20%;
+  }
+
+  .quote-wrapper blockquote {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .quote {
+    font-size: 24px;
+    fill: var(--app-white);
+  }
+
+/* END --media caption here */
+
+
+/* START -- utilities here */
+.row {
+  width: 100%;
   text-align: center;
 }
+/* END -- utilites here */
 
-/* mobile view */
-@media only screen and (max-width: 786px) {
-    .item-offerings__group {
+/* START item showcase */
+.item-showcase img {
+  width: 100%;
+}
+
+/* END item showcase */
+
+
+
+
+@media only screen and (min-width:769px) {
+  #home .site-header {
+      background: var(--app-white);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .desktop-only {
+      display: none;
+  }
+
+  #home .site-header {
+      background: var(--app-secondary);
+  }
+
+  .item-offerings__group {
       margin-top: 0px;
       position: relative;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .container {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+
+  .user-form {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0;
+  }
+
+  .user-account .equal-columns_2 div:nth-child(1) {
+      margin-top: 20px;
+  }
+
+  .caption .text-wrapper, .img-wrapper {
+    width: 100%;
  }
+}
 
- /* very large screens */
- @media only screen and (min-width: 1440px) {
-   .hero {
-     height: calc(100vh - 85px);
-   }
+/* very large screens */
+@media only screen and (min-width: 1440px) {
+ .hero {
+   height: calc(100vh - 85px);
  }
-
-/*# sourceMappingURL=main.css.map */
-
+}
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,41 @@
+footer {
+	min-height: 250px;
+	background: var(--app-gray);
+	padding: 20px 0;
+  }
+  
+footer .item-wrap {
+  color: var(--app-off-white);
+}
+
+footer .row .item-wrap p{
+	text-align: center;
+}
+
+.footer-content {
+	margin-block-start: 0;
+	padding-block-start: 0;
+	padding-inline-start: 0;
+}
+
+footer .item-wrap {
+  font-size: 14px;
+}
+
+footer .social-media_icon a svg {
+	fill: var(--app-white);
+	width: 30px;
+	margin: 5px;
+}
+
+footer .social-media_icon a::after {
+	content: attr(data-about);
+	position: absolute;
+	visibility: hidden;
+	font-weight: 300;
+	font-size: 12px;
+}
+
+footer .social-media_icon a:hover::after {
+	visibility: visible;
+}
