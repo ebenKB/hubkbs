@@ -99,7 +99,7 @@ $sixteen: 16;
   }
 
   .equal-columns_auto {
-    grid-template-columns:  repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(200, 1fr));
   }
 
   .small-equal-columns_auto {
