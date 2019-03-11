@@ -319,6 +319,10 @@ nav ul {
   background: var(--app-light);
 }
 
+.advert .img-wrapper {
+  margin-bottom: 80px;
+}
+
 /* @supports (display: grid) {
   .grid {
     display: grid;
@@ -388,7 +392,7 @@ nav ul {
 
 .caption .text-wrapper,
 .img-wrapper {
-  width: 80%;
+  width: 90%;
 }
 /* end advert style */
 
@@ -490,12 +494,22 @@ nav ul {
     box-shadow: 1px 1px 1px 1px rgba(169, 160, 160, 0.5);
   }
 
-  .media-caption .bg-image_cover {
-    background: url("https://images.unsplash.com/photo-1529636444744-adffc9135a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 600px;
+  .media-caption .bg-image_media-probe,
+  .media-caption .bg-image_software {
+    min-height: 600px;
   }
+
+  .media-caption .bg-image_media-probe {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background: url("../images/bg/handshake.jpeg");
+  }
+
+  /* .media-caption .bg-image_software {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background: url(../images/bg/laptop.png)
+  } */
 
   .quote-wrapper {
     color: var(--app-white);
@@ -512,6 +526,11 @@ nav ul {
   .quote {
     font-size: 24px;
     fill: var(--app-white);
+  }
+
+  .quote-caption {
+    /* color: var(--app-gray); */
+    text-decoration: underline;
   }
 
 /* END --media caption here */
