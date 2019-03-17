@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/css/util.css">
   <link rel="stylesheet" href="/css/main.css">
   <script src="/js/jquery.min.js"></script>
+  <script src="/js/scroll-out.min.js"></script>
   <script src="/js/core.js"></script>
 </head>
 </html>
@@ -270,20 +271,23 @@
     </div>
   </div>
 </footer>
+    <script>
+      ScrollOut({
+       threshold: 0.5,
+       
 
-   <section class="grid-ui hide">
-     <div class="grid">
-       <div class="two">
-         <div>one</div>
-         <div>two</div>
-       </div>
-       <div class="three">
-         <div>one</div>
-         <div>two</div>
-         <div>three</div>
-       </div>
-     </div>
-   </section>
+       onShown: function(el) {
+          // remove the class
+          el.classList.remove("animated");
+
+          // force reflow
+          void el.offsetWidth;
+
+          // re-add the animated cl
+          el.classList.add("animated");
+        },
+        });
+    </script>
   </div>
 </body>
 </html>
