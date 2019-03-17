@@ -59,7 +59,7 @@
   grid-template-columns: repeat(16, 1fr);
 }
 .grid-ui .equal-columns_auto {
-  grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .grid-ui .small-equal-columns_auto {
   grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
