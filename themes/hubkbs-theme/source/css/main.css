@@ -14,6 +14,7 @@
 
 :root {
   --app-primary:  #1395F1;
+  --app-primary-light:  rgba(19, 149, 241,0.5);
   --app-secondary: rgb(0, 157, 255);
   --app-icon-bg: rgba(0, 157, 255, 0.2);
   --app-icon-bg-light: rgba(0, 157, 255, 0.1);
@@ -22,6 +23,7 @@
   --app-font-caption: #34445B;
   --app-font-caption-light:rgba(66,83,107,.75);
   --app-default: #758D94;
+  --app-default-light: rgba(117, 141, 148, 0.5);
   --app-header: #34445B;
   --app-white: #fff;
   --app-off-white: #d2cfcf;
@@ -323,6 +325,10 @@ nav ul {
   margin-bottom: 80px;
 }
 
+.advert .caption h1 {
+  font-size: 50px;
+}
+
 /* @supports (display: grid) {
   .grid {
     display: grid;
@@ -378,7 +384,6 @@ nav ul {
   line-height: 25px;
   margin-bottom: 10px;
 }
-
 
 .item-wrap dl a {
   color: inherit;
@@ -541,18 +546,73 @@ nav ul {
   width: 100%;
   text-align: center;
 }
+
+.big-size {
+  width: 800px;
+}
+
+.small-pad {
+  padding: 100px 0;
+}
+
 /* END -- utilites here */
 
 /* START item showcase */
 .item-showcase img {
   width: 100%;
 }
-
 /* END item showcase */
 
+/* START -- laptop covers page style */
 
+.img-grid_item img {
+  width: 94%;
+  margin: 10px 3%;
+}
+/* END --laptop covers syle */
 
+/* ANIMATE -- data scroll */
+  [data-scroll] {
+    transition: opacity 1s;
+  }
 
+  [data-scroll="in"] {
+    opacity: 1;
+    /* transform: translateX(0px);
+    transition: 1s ease-in-out; */
+    -webkit-animation: slide-in_left 1s ease-in-out 0s 1 normal forwards;
+            animation: slide-in_left 1s ease-in-out 0s 1 normal forwards;
+  }
+
+  [data-scroll="out"] {
+    opacity: 0;
+    -webkit-animation: slide-out_left 1s ease-in-out 0s 1 normal forwards;
+            animation: slide-out_left 1s ease-in-out 0s 1 normal forwards;
+    /* transform: translateX(-200px);
+    transition: 1s ease-in-out; */
+  }
+
+  [shake] {
+    transition: opacity 1s;
+  }
+
+  [shake="in"] {
+    opacity: 1;
+    /* transform: translateX(0px);
+    transition: 1s ease-in-out; */
+    -webkit-animation: slide-in_left 3s ease-in-out 0s 1 normal forwards;
+            animation: slide-in_left 3s ease-in-out 0s 1 normal forwards;
+  }
+
+  [shake="out"] {
+    opacity: 0;
+    -webkit-animation: slide-out_left 3s ease-in-out 0s 1 normal forwards;
+            animation: slide-out_left 3s ease-in-out 0s 1 normal forwards;
+    /* transform: translateX(-200px);
+    transition: 1s ease-in-out; */
+  }
+
+/* END animate data-scroll */
 @media only screen and (min-width:769px) {
   #home .site-header {
       background: var(--app-white);

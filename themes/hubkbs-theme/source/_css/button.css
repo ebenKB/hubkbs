@@ -14,6 +14,10 @@
   color: #fff;
 }
 
+.primary:hover {
+  background:  var(--app-primary-light);
+}
+
 .cta {
   position: absolute;
   width: 260px;
@@ -37,4 +41,9 @@
 
 .default {
   background: var(--app-default);
+  color: var(--app-white);
+}
+
+.default:hover {
+  background: var(--app-default-light);
 }

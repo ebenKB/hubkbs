@@ -99,7 +99,7 @@ $sixteen: 16;
   }
 
   .equal-columns_auto {
-    grid-template-columns:  repeat(auto-fit, minmax(200, 1fr));
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .small-equal-columns_auto {
@@ -121,19 +121,74 @@ $sixteen: 16;
 }
 
 // DEFINE -- unequal grid columns here
+.grid-auto_columns {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
 
 .grid-ui  {
-  .grid {
+  .grid-auto_columns {
+    .one {
+      grid-column: span 1;
+    }
     .two {
-      // grid-area: 1/0/auto/2;
-      grid-area: 1 / 1 / auto / 3 ;
-      background: red;
+      grid-column: span 2;
     }
   
     .three {
-      // grid area shorthand -- grid-row-start, grid-column-start, grid-row-end and grid-column-end
-      grid-area: 1 / 2 / 1 / 5;
-      background: blue;
+      grid-column: span 3;
+    }
+
+    .four {
+      grid-column: span 4;
+    }
+
+    .five {
+      grid-column: span 5;
+    }
+
+    .six {
+      grid-column: span 6;
+    }
+
+    .seven {
+      grid-column:  span 7;
+    }
+
+    .eight {
+      grid-column: span 8;
+    }
+
+    .nine {
+      grid-column:  span 9;
+    }
+
+    .ten {
+      grid-column: span 10;
+    }
+
+    .eleven {
+      grid-column: span 11;
+    }
+
+    .twelve {
+      grid-column:  span 12 ;
+    }
+
+    .thirteen {
+      grid-column: span 13;
+    }
+
+    .fourteen {
+      grid-column: span 14;
+    }
+
+    .fifteen {
+      grid-column:  span 15;
+    }
+
+    .sixteen {
+      grid-column: span 16;
     }
   }
 }
@@ -171,6 +226,4 @@ $sixteen: 16;
         grid-row-gap: 20px;
       }
   }
-
-
 }

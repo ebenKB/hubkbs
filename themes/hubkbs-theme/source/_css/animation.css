@@ -29,7 +29,36 @@
 	}
 }
 
-.slide-out {
-	transform: translateX(100px);
+ /* slide in from left */
+/* .slide-in_left {
+	transform: translateX(0px);
     transition: 0.5s ease-in-out;
+} */
+@keyframes slide-in_left {
+	0% {
+		transform: translateX(-200px);
+	}
+
+	50% {
+		transform: translateX(-100px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+/* move away from the left */
+@keyframes slide-out_left {
+	0% {
+		transform: translateX( 0px);
+	}
+
+	50% {
+		transform: translateX(-100px);
+	}
+
+	100% {
+		transform: translateX(-200px);
+	}
 }
