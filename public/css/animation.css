@@ -66,9 +66,112 @@
 	}
 }
 
-.slide-out {
-	-webkit-transform: translateX(100px);
-	        transform: translateX(100px);
+ /* slide in from left */
+.slide-out_right {
+	-webkit-transform: translateX(200px);
+	        transform: translateX(200px);
     transition: 0.5s ease-in-out;
+}
+
+@-webkit-keyframes slide-in_left {
+	0% {
+		-webkit-transform: translateX(-200px);
+		        transform: translateX(-200px);
+	}
+
+	50% {
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+}
+
+@keyframes slide-in_left {
+	0% {
+		-webkit-transform: translateX(-200px);
+		        transform: translateX(-200px);
+	}
+
+	50% {
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+}
+
+/* move away from the left */
+@-webkit-keyframes slide-out_left {
+	0% {
+		-webkit-transform: translateX( 0px);
+		        transform: translateX( 0px);
+	}
+
+	50% {
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(-200px);
+		        transform: translateX(-200px);
+	}
+}
+@keyframes slide-out_left {
+	0% {
+		-webkit-transform: translateX( 0px);
+		        transform: translateX( 0px);
+	}
+
+	50% {
+		-webkit-transform: translateX(-100px);
+		        transform: translateX(-100px);
+	}
+
+	100% {
+		-webkit-transform: translateX(-200px);
+		        transform: translateX(-200px);
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		        transform: rotate(360deg);
+	}
 }
 /*# sourceMappingURL=animation.css.map */
