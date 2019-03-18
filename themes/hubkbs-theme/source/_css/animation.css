@@ -30,10 +30,11 @@
 }
 
  /* slide in from left */
-/* .slide-in_left {
-	transform: translateX(0px);
+.slide-out_right {
+	transform: translateX(200px);
     transition: 0.5s ease-in-out;
-} */
+}
+
 @keyframes slide-in_left {
 	0% {
 		transform: translateX(-200px);
@@ -60,5 +61,19 @@
 
 	100% {
 		transform: translateX(-200px);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }

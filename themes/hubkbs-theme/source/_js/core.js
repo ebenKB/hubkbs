@@ -57,8 +57,8 @@ window.addEventListener('scroll', () => {
 
     // show floating button
     if(current_pos >= 700) {
-      document.getElementById('to-top').classList.remove('slide-out');
-    } else document.getElementById('to-top').classList.add('slide-out');
+      document.getElementById('to-top').classList.remove('slide-out_right');
+    } else document.getElementById('to-top').classList.add('slide-out_right');
   });
 });
 });

@@ -13,6 +13,9 @@
   grid-gap: 10px;
 }
 
+.grid-ui .center {
+  align-items: center;
+}
 .grid-ui .equal-columns_2 {
   grid-template-columns: repeat(2, 1fr);
 }

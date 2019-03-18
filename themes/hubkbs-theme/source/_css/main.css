@@ -565,9 +565,23 @@ nav ul {
 
 /* START -- laptop covers page style */
 
+.img-grid_item {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+
 .img-grid_item img {
-  width: 94%;
-  margin: 10px 3%;
+ width: 80%;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+.img-grid_item img:hover {
+  transform: scale(1.5);
+  transition: 0.35s ease-in-out;
+  /* animation: spin 3s ease-in-out 0s 1 normal forwards; */
+  
 }
 /* END --laptop covers syle */
 

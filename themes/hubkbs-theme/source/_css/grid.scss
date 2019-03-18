@@ -37,6 +37,10 @@ $sixteen: 16;
 // DEFINE -- equal grid columns here
 
 .grid-ui {
+
+  .center {
+    align-items: center;
+  }
   
   .equal-columns_#{$two} {
     grid-template-columns: repeat(2, 1fr);
