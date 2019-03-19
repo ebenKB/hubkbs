@@ -1,0 +1,17 @@
+.carousel {
+    position: relative;
+    background: red;
+    height: 400px;
+    background: url("../images/bg/cover-bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.carousel-item img {
+    height: 100%;
+}
