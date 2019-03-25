@@ -2,7 +2,8 @@
     position: relative;
     background: red;
     height: 400px;
-    background: url("../images/bg/cover-bg_1.jpg");
+    background: linear-gradient(0deg,rgba(187, 182, 185, 0.3),rgba(212, 212, 212, 0.3)),
+                url("../images/bg/cover-bg_1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
