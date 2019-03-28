@@ -230,4 +230,19 @@ $sixteen: 16;
         grid-row-gap: 20px;
       }
   }
+  .grid-ui {
+      .grid-auto_columns {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+  }
+
+  // IMPLEMENT this to be more generic
+  footer {
+    .grid-ui {
+      .equal-columns_#{$four} {
+        grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+      }
+    }
+  }
 }

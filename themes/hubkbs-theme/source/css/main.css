@@ -30,6 +30,7 @@
   --app-off-white: #d2cfcf;
   --app-gray: #63696d;
   --app-black: #000;
+  --app-faint-line: rgba(123, 144, 149, 0.3);
 }
 
 body{
@@ -168,6 +169,21 @@ nav ul {
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hero .hero-text__wrapper .hero-text h2 {
+  -webkit-animation: dropdown 2s ease-in-out 0s 1 forwards normal;
+          animation: dropdown 2s ease-in-out 0s 1 forwards normal;
+}
+
+.slide-in {
+  -webkit-transform: translateX(-500px);
+          transform: translateX(-500px);
+}
+
+.hero .hero-text__wrapper .hero-text .slide-in {
+  -webkit-animation: slide-in_left 1.5s ease-in-out 2s 1 forwards normal;
+          animation: slide-in_left 1.5s ease-in-out 2s 1 forwards normal;
 }
 
 .small-hero {
@@ -396,6 +412,11 @@ nav ul {
   color: var(--app-secondary) ;
 }
 
+.text-wrapper h1 {
+  font-size: 46px;
+  line-height: 1.5;
+}
+
 .caption .text-wrapper,
 .img-wrapper {
   width: 90%;
@@ -541,6 +562,30 @@ nav ul {
 
 /* END --media caption here */
 
+/* START -- contact form style here */
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* border-radius: 2.5px; */
+    border: transparent;
+    border-bottom: 1px solid var(--app-default);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .contact-form input {
+    height: 40px;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-bottom: 1px solid var(--app-secondary)
+  }
+/* END -- contact form style here */
 
 /* START -- utilities here */
 .row {
@@ -556,6 +601,15 @@ nav ul {
   padding: 100px 0;
 }
 
+.img-fit {
+  width: 100%;
+}
+
+.img-fit-pad {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 /* END -- utilites here */
 
 /* START item showcase */
@@ -567,7 +621,7 @@ nav ul {
 /* START -- laptop covers page style */
 .cover {
   position: relative;
-  border-top: 1px solid var(--app-default);
+  border-top: 1px solid var (--app-faint-line);
 }
 
 .cover::before {
@@ -733,6 +787,10 @@ nav ul {
 
   .caption .text-wrapper, .img-wrapper {
     width: 100%;
+ }
+
+ .advert .container .twelve .m-t-180 {
+   margin-top: 0;
  }
 }
 

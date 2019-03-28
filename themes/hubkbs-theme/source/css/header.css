@@ -116,7 +116,7 @@
   border-radius: 50%;
   height: 34px;
   width: 34px;
-  background: var(--app-icon-bg);
+  background: var(--app-icon-bg-light);
 }
 
 .nav-item .nav-links .link-item .link-image img {
@@ -126,6 +126,6 @@
 }
 
 .nav-item .nav-links .link-item:hover .link-image {
-  background: var(--app-icon-bg-light);
+  background: var(--app-icon-bg);
 }
 /*# sourceMappingURL=header.css.map */

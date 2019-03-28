@@ -47,3 +47,11 @@
 .default:hover {
   background: var(--app-default-light);
 }
+
+@media only screen and (max-width: 768px) {
+  .btn {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
