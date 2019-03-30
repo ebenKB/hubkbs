@@ -1,3 +1,18 @@
+/* nav-item --start navigation and navigation links */
+nav ul li {
+  position: relative;
+  list-style: none;
+  display: inline;
+  padding: 30px;
+  cursor: hand;
+}
+
+nav ul {
+  margin-top: 32px;
+  /* margin-right: 15%;
+  float: right; */
+}
+
 .nav-item .dropdown {
   top: 90%;
   display: none;
@@ -123,4 +138,52 @@
 
 .nav-item .nav-links .link-item:hover .link-image {
   background: var(--app-icon-bg);
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ".menu" 
+    ".hamburger-wrapper" 
+  }
+  
+  .hamburger-wrapper {
+    position: absolute;
+    right: 10%;
+    top: 15%;
+  }
+  
+  .menu{
+    background: var(--app-white);
+    padding-inline-start: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    display: block;
+    padding: 10px 40px;
+  }
+
+  .nav-item .dropdown {
+    position: relative;
+    border: none;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .menu-toggle {
+		display:block;
+		visibility: hidden;
+	}
+}
+
+/* hide the hamburger for big screens */
+@media only screen and (min-width:768px){
+  .hamburger-wrapper{
+    display: none;
+  }
 }
