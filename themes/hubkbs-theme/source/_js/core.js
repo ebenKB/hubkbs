@@ -6,6 +6,16 @@ window.onload = function() {
   // })
 }
 
+$('document').ready(() => {
+  const btn = document.getElementById('btnSubmit');
+  if(btn != null) {
+    btn.addEventListener('click', (() => {
+      $('#validated-form').addClass('validated');
+      console.log("validated...");
+    }));
+  }
+});
+
 // add scroll animation for all scrollable elements
 $("document").ready(() => {
   scroll('to-offering', 'offerings', 500);
@@ -26,8 +36,6 @@ function scroll(id, to, delay) {
     }, delay)
   });
 }
-
-
 
 $("document").ready(() => {
 // scroll positions

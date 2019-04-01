@@ -31,6 +31,7 @@
   --app-off-white: #d2cfcf;
   --app-gray: #63696d;
   --app-black: #000;
+  --app-red: rgb(223, 23, 23);
   --app-faint-line: rgba(123, 144, 149, 0.3);
 }
 
@@ -334,36 +335,6 @@ a, ul li{
   font-size: 50px;
 }
 
-/* @supports (display: grid) {
-  .grid {
-    display: grid;
-  }
-}
-
-@supports not (display: grid) {
-  .grid {
-    display: flex;
-  }
-}
-
-.eq-grid{
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 10px;
-}
-
-.three-eq-grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.four-col-grid__eq {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-auto-flow: column;
-  -ms-layout-grid-type: 10px;
-} */
-
 .four-col-grid__uneq {
   grid-template-columns: 430px 150px auto auto;
   grid-gap: 40px;
@@ -598,6 +569,12 @@ a, ul li{
   margin-left: 5%;
   margin-right: 5%;
 }
+
+.validated:invalid input,
+.validated:invalid textarea {
+  border-bottom: 1px solid var(--app-red);
+}
+
 /* END -- utilites here */
 
 /* START item showcase */
