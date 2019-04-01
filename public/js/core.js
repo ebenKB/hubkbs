@@ -5,6 +5,15 @@ window.onload = function() {
   //   console.log('this is the data from fetch :', data)
   // })
 }
+$('document').ready(() => {
+  const btn = document.getElementById('btnSubmit');
+  if(btn != null) {
+    btn.addEventListener('click', (() => {
+      $('#contact-form').addClass('validated');
+      console.log("validated...");
+    }));
+  }
+});
 
 // add scroll animation for all scrollable elements
 $("document").ready(() => {
@@ -26,8 +35,6 @@ function scroll(id, to, delay) {
     }, delay)
   });
 }
-
-
 
 $("document").ready(() => {
 // scroll positions

@@ -16,6 +16,7 @@
 .grid-ui .center {
   align-items: center;
 }
+
 .grid-ui .equal-columns_2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -154,6 +155,15 @@
 .grid-ui .equal-columns_12 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-row-gap: 20px;
+  }
+
+  .grid-ui .grid-auto_columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+
+  footer .grid-ui .equal-columns_4 {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
   }
 }
 
