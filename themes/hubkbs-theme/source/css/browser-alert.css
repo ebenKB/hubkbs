@@ -1,0 +1,53 @@
+@supports (display: grid) {
+	.browser-alert {
+	display: none;
+	/* width: 100%;
+	background: #f3d00b;
+	position: fixed;
+	padding: 10px;
+	top: 88%;
+	margin-bottom: 100px; */
+	}
+}
+
+@supports not (display: grid) {
+	.browser-alert {
+		width: 100%;
+		background: #f3d00b;
+		position: fixed;
+		padding: 10px;
+	}
+}
+/* mobile devices */
+@media only screen and (max-width:768px) {
+	.browser-alert {
+		top: calc(100vh - 140px);
+	}
+
+	.browser-alert .close_cta {
+		left: 89%;
+	}
+}
+
+/* large screens */
+@media screen and (min-width: 768px){
+	.browser-alert {
+		top: calc(100vh - 90px);
+	}
+
+	.browser-alert .close_cta {
+		left: 96%;
+	}
+}
+
+.browser-alert .close_cta {
+	top: 5%;
+	position: absolute;
+}
+
+.browser-alert .close_cta img {
+	width: 30px;
+}
+
+
+/*# sourceMappingURL=browser-alert.css.map */

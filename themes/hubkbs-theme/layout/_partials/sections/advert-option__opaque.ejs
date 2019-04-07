@@ -1,0 +1,27 @@
+<section class="advert advert-bg grid-ui" id="printing">
+	<div class="container grid equal-columns_2 grid-gap_10">
+		<div class="img-wrapper img-caption">
+			<img src=" <%- imageUrl %> " alt="" style="width: 100%">
+		</div>
+		<div class="caption">
+			<div class="text-wrapper">
+				<h4>
+				<%- heading %>
+				</h4>
+				<p class="desc">
+						<%- para_1 %>
+				</p>
+				<%if(para_2 != ''){%>
+						<%- para_2 %>
+				<%}%>
+				<%if(link != ''){%>
+					<a href="<%- link %> ">
+							Read More
+					</a>
+				<%}%>
+			</div>
+		</div>
+	</div>
+</section>
+
+

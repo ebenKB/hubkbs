@@ -10,9 +10,8 @@
 @import'../css/carousel.css';
 @import '../css/footer.css';
 @import '../css/hamburger.css';
+@import '../css/browser-alert.css';
 @import '../css/grid.css';
-/* @import "../css/media-query.css" screen and (max-width: 768px); */
-
 
 :root {
   --app-primary:  #1395F1;
@@ -143,7 +142,6 @@ a, ul li{
             animation: addColour 0.5s ease-in-out 0s 1 forwards normal;
   }
 }
-
 /* --end nav style */
 
 
@@ -369,6 +367,10 @@ a, ul li{
   line-height: 26px;
   font-size: 14px;
   color: var(--app-secondary) ;
+}
+
+.advert a {
+  color: var(--app-white);
 }
 
 .text-wrapper h1 {
