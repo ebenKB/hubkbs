@@ -141,6 +141,10 @@ nav ul {
 }
 
 @media only screen and (max-width: 768px) {
+  .nav-item:hover::after {
+    display: none;
+  }
+
   nav {
     display: grid;
     grid-template-columns: 2fr 10fr;
@@ -150,6 +154,11 @@ nav ul {
     ".hamburger-wrapper" 
   }
   
+  nav .grid-ui .equal-columns_2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0;
+  }
+
   .hamburger-wrapper {
     position: absolute;
     right: 10%;
@@ -162,9 +171,14 @@ nav ul {
   }
 
   nav ul li {
+    /* position: relative;
+    display: block;
+    padding: 10px 40px; */
+
     position: relative;
     display: block;
-    padding: 10px 40px;
+    padding: 10px 0px;
+    margin-right: 10px;
   }
 
   .nav-item .dropdown {
@@ -173,6 +187,12 @@ nav ul {
     left: 0;
     right: 0;
     width: 100%;
+  }
+
+  .dropdown .dropdown-container {
+    /* padding: 25px; */
+    padding: 2.5px;
+    width: calc(100% - 5px) ;
   }
 
   .menu-toggle {

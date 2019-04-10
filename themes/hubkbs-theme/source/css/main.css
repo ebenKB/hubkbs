@@ -1,3 +1,4 @@
+@import '../css/grid.css';
 @import '../css/button.css';
 @import '../css/floating-btn.css';
 @import '../css/tabs.css';
@@ -11,7 +12,7 @@
 @import '../css/footer.css';
 @import '../css/hamburger.css';
 @import '../css/browser-alert.css';
-@import '../css/grid.css';
+
 
 :root {
   --app-primary:  #1395F1;
