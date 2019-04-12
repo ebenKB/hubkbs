@@ -51,7 +51,11 @@ window.addEventListener('scroll', () => {
     if (current_pos > last_known_scroll_position) {
           // animate nav header 
       if (current_pos >= 300) {
-        document.getElementById('site-header').classList.add('addColour')
+        // $('#menu').addClass('hide');
+
+        // hide the menu when it is open and the user is 
+        // document.getElementById('site-header').style.setProperty('position', 'fixed');
+        document.getElementById('site-header').classList.add('addColour');
       }
     } else {
       // scroll up 
