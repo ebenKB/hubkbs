@@ -1,10 +1,12 @@
-<%- partial('_partials/hero/small-hero',
+<!-- <%- partial('_partials/hero/small-hero',
 {
   type: 'research',
   isInLine:'true',
   leftContent:'',
   mainContent: 'Our Services'
-})%>
+})%> -->
+
+<%- partial('_partials/hero/large-hero', {type: 'citation', text: 'We have been trusted for years; <br /> Our citations and frames are quality.'}) %>
 <section class="tabs">
   <%-partial('_partials/sections/services-tabs', {type: 'citation'}) %>
 </section>
