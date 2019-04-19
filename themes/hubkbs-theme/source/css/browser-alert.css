@@ -16,6 +16,7 @@
 		background: #f3d00b;
 		position: fixed;
 		padding: 10px;
+		z-index: 10;
 	}
 }
 /* mobile devices */

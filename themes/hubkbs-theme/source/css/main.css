@@ -174,6 +174,21 @@ a, ul li{
           animation: slide-in_left 1.5s ease-in-out 2s 1 forwards normal;
 }
 
+.medium-hero {
+  height: 450px;
+}
+
+.medium-hero__printing {
+  position: relative;
+  background-image:linear-gradient(
+		rgba(5, 5, 5, 0.5),
+		rgba(64, 65, 64, 0.35)
+  ),
+  url("/images/hero/raw-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .large-hero__citation {
   background-image:linear-gradient(
 		rgba(5, 5, 5, 0.5),
@@ -595,6 +610,12 @@ a, ul li{
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.img-md-pad {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .validated:invalid input,

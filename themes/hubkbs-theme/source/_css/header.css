@@ -145,14 +145,14 @@ nav ul {
     display: none;
   }
 
-  nav {
+  /* nav {
     display: grid;
     grid-template-columns: 2fr 10fr;
     grid-template-rows: auto;
     grid-template-areas: 
     ".menu" 
     ".hamburger-wrapper" 
-  }
+  } */
   
   nav .grid-ui .equal-columns_2 {
     grid-template-columns: repeat(2, 1fr);

@@ -130,6 +130,15 @@ $sixteen: 16;
   grid-template-columns: repeat(16, 1fr);
 }
 
+.grid-ui {
+  .grid-auto_columns_1 {
+    display: grid;
+    grid-template-areas: repeat(16,1fr);
+    grid-column: span 1;
+  }
+}
+
+// START   comment
 .grid-ui  {
   .grid-auto_columns {
     .one {
@@ -197,6 +206,7 @@ $sixteen: 16;
   }
 }
 
+// END comment
 // GRID -- rows 
 
 .grid-ui {
@@ -242,6 +252,18 @@ $sixteen: 16;
     .grid-ui {
       .equal-columns_#{$four} {
         grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+      }
+    }
+  }
+}
+
+// very small devices 
+@media only screen and (max-width:320px) {
+  // IMPLEMENT this to be more generic
+  footer {
+    .grid-ui {
+      .equal-columns_#{$four} {
+        grid-template-columns: repeat(auto-fit, minmax(140px, auto));
       }
     }
   }

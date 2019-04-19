@@ -16,7 +16,6 @@
 .grid-ui .center {
   align-items: center;
 }
-
 .grid-ui .equal-columns_2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -81,6 +80,12 @@
 .grid-auto_columns {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-ui .grid-auto_columns_1 {
+  display: grid;
+  grid-template-areas: repeat(16, 1fr);
+  grid-column: span 1;
 }
 
 .grid-ui .grid-auto_columns .one {
@@ -164,6 +169,11 @@
 
   footer .grid-ui .equal-columns_4 {
     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer .grid-ui .equal-columns_4 {
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
   }
 }
 
