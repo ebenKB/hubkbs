@@ -12,6 +12,7 @@
 @import '../css/footer.css';
 @import '../css/hamburger.css';
 @import '../css/browser-alert.css';
+@import '../css/launch.css';
 
 
 :root {
@@ -409,9 +410,9 @@ a, ul li{
   color: var(--app-secondary) ;
 }
 
-.advert a {
+/* .advert a {
   color: var(--app-white);
-}
+} */
 
 .text-wrapper h1 {
   font-size: 46px;

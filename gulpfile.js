@@ -52,7 +52,11 @@ function build(cb) {
     cb();
 }
 
+function watch(cb) {
+    gulp.watch('./themes/hubkbs-theme/source/_css/*.css', build,);
+    cb();
+}
 
-exports.build = series(clean, parallel(build, cssMinify, jsMinify));
+exports.build = series(clean, parallel(build, watch, cssMinify, jsMinify));
 
 // exports.default = defaultTask
