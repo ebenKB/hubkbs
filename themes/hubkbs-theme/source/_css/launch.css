@@ -7,3 +7,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.launch-hero .hero-text__wrapper .hero-text {
+  top: 40%;
+  font-size: 20px;
+  line-height: 1.3;
+}
