@@ -12,6 +12,7 @@
 @import '../css/footer.css';
 @import '../css/hamburger.css';
 @import '../css/browser-alert.css';
+@import '../css/launch.css';
 
 
 :root {
@@ -172,6 +173,21 @@ a, ul li{
 .hero .hero-text__wrapper .hero-text .slide-in {
   -webkit-animation: slide-in_left 1.5s ease-in-out 2s 1 forwards normal;
           animation: slide-in_left 1.5s ease-in-out 2s 1 forwards normal;
+}
+
+.medium-hero {
+  height: 450px;
+}
+
+.medium-hero__printing {
+  position: relative;
+  background-image:linear-gradient(
+		rgba(5, 5, 5, 0.5),
+		rgba(64, 65, 64, 0.35)
+  ),
+  url("/images/hero/raw-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .large-hero__citation {
@@ -394,9 +410,9 @@ a, ul li{
   color: var(--app-secondary) ;
 }
 
-.advert a {
+/* .advert a {
   color: var(--app-white);
-}
+} */
 
 .text-wrapper h1 {
   font-size: 46px;
@@ -595,6 +611,12 @@ a, ul li{
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.img-md-pad {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .validated:invalid input,
@@ -796,6 +818,10 @@ a, ul li{
    margin-top: 30px;
    margin-left: 30px;
  }
+
+ .advert .img-wrapper {
+  width: 100%;
+}
 }
 
 /* very large screens */
