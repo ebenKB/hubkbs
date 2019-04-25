@@ -1,0 +1,16 @@
+.hide {
+    display: none;
+}
+
+.shadow {
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,0.2);
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(100, 98, 98, 0.15);
+}
+
+.faint-caption {
+    color: #758D94;
+}
+/*# sourceMappingURL=resources-util.css.map */

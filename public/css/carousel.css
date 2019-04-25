@@ -1,0 +1,22 @@
+.carousel {
+  position: relative;
+  background: red;
+  height: 400px;
+  background: linear-gradient(0deg, rgba(187, 182, 185, 0.3), rgba(212, 212, 212, 0.3)), url("../images/bg/cover-bg_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+/*# sourceMappingURL=carousel.css.map */
+
+/*# sourceMappingURL=carousel.css.map */

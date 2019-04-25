@@ -1,0 +1,14 @@
+:root {
+  --app-primary:  #1395F1;
+  --app-secondary: rgb(0, 157, 255);
+  --app-primary-light: rgba(0, 157, 255,0.7);
+  --app-light: #F2F6F9;
+  --app-font-caption: #34445B;
+  --app-font-caption-light:rgba(66,83,107,.75);
+  --app-default: #758D94;
+  --app-header: #34445B;
+  --app-white: #fff;
+  --app-off-white: #d2cfcf;
+  --app-gray: #63696d;
+}
+/*# sourceMappingURL=variables.css.map */

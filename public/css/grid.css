@@ -1,0 +1,182 @@
+@supports (display: grid) {
+  .grid {
+    display: grid;
+  }
+}
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+  }
+}
+/* wrap all grid items in this parent */
+.grid-gap_10 {
+  grid-gap: 10px;
+}
+
+.grid-ui .center {
+  align-items: center;
+}
+.grid-ui .equal-columns_2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-ui .equal-columns_3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-ui .equal-columns_4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-ui .equal-columns_5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-ui .equal-columns_6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-ui .equal-columns_seven {
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid-ui .equal-columns_8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid-ui .equal-columns_9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-ui .equal-columns_10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.grid-ui .equal-columns_11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.grid-ui .equal-columns_12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-ui .equal-columns_13 {
+  grid-template-columns: repeat(13, 1fr);
+}
+.grid-ui .equal-columns_14 {
+  grid-template-columns: repeat(14, 1fr);
+}
+.grid-ui .equal-columns_15 {
+  grid-template-columns: repeat(15, 1fr);
+}
+.grid-ui .equal-columns_16 {
+  grid-template-columns: repeat(16, 1fr);
+}
+.grid-ui .equal-columns_auto {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid-ui .small-equal-columns_auto {
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+}
+.grid-ui .medium-equal-columns_auto {
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+.grid-ui .large-equal-columns_auto {
+  grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+}
+.grid-ui .extra-large-equal-columns_auto {
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+.grid-auto_columns {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.grid-ui .grid-auto_columns_1 {
+  display: grid;
+  grid-template-areas: repeat(16, 1fr);
+  grid-column: span 1;
+}
+
+.grid-ui .grid-auto_columns .one {
+  grid-column: span 1;
+}
+.grid-ui .grid-auto_columns .two {
+  grid-column: span 2;
+}
+.grid-ui .grid-auto_columns .three {
+  grid-column: span 3;
+}
+.grid-ui .grid-auto_columns .four {
+  grid-column: span 4;
+}
+.grid-ui .grid-auto_columns .five {
+  grid-column: span 5;
+}
+.grid-ui .grid-auto_columns .six {
+  grid-column: span 6;
+}
+.grid-ui .grid-auto_columns .seven {
+  grid-column: span 7;
+}
+.grid-ui .grid-auto_columns .eight {
+  grid-column: span 8;
+}
+.grid-ui .grid-auto_columns .nine {
+  grid-column: span 9;
+}
+.grid-ui .grid-auto_columns .ten {
+  grid-column: span 10;
+}
+.grid-ui .grid-auto_columns .eleven {
+  grid-column: span 11;
+}
+.grid-ui .grid-auto_columns .twelve {
+  grid-column: span 12;
+}
+.grid-ui .grid-auto_columns .thirteen {
+  grid-column: span 13;
+}
+.grid-ui .grid-auto_columns .fourteen {
+  grid-column: span 14;
+}
+.grid-ui .grid-auto_columns .fifteen {
+  grid-column: span 15;
+}
+.grid-ui .grid-auto_columns .sixteen {
+  grid-column: span 16;
+}
+
+.grid-ui .grid .rows_2 {
+  grid-template-rows: 2;
+  grid-row-gap: 10px;
+}
+.grid-ui .grid .rows_4 {
+  grid-template-rows: 4;
+  grid-row-gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-ui .equal-columns_2,
+.grid-ui .equal-columns_3,
+.grid-ui .equal-columns_4,
+.grid-ui .equal-columns_5,
+.grid-ui .equal-columns_6,
+.grid-ui .equal-columns_seven,
+.grid-ui .equal-columns_8,
+.grid-ui .equal-columns_9,
+.grid-ui .equal-columns_10,
+.grid-ui .equal-columns_11,
+.grid-ui .equal-columns_12 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 20px;
+  }
+
+  .grid-ui .grid-auto_columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+
+  footer .grid-ui .equal-columns_4 {
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+  }
+}
+@media only screen and (max-width: 320px) {
+  footer .grid-ui .equal-columns_4 {
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  }
+}
+
+/*# sourceMappingURL=grid.css.map */
+
+/*# sourceMappingURL=grid.css.map */
