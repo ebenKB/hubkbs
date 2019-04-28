@@ -410,6 +410,9 @@ a, ul li{
   color: var(--app-secondary) ;
 }
 
+.caption .invert {
+  color: var(--app-white);
+}
 /* .advert a {
   color: var(--app-white);
 } */
@@ -815,13 +818,17 @@ a, ul li{
  }
 
  .company-logo {
-   margin-top: 30px;
-   margin-left: 30px;
+  margin-top: 2px;
+  margin-left: 5px;
  }
 
  .advert .img-wrapper {
   width: 100%;
 }
+
+.hero-text__wrapper .hero-text {
+  top: 30%;
+  }
 }
 
 /* very large screens */

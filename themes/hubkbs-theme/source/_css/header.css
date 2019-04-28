@@ -58,19 +58,6 @@ nav ul {
 .nav-item .dropdown ul li:hover {
   color: var(--app-secondary);
 }
-/* .nav-item .dropdown::before {
-  background: red;
-  position: absolute;
-  right: 0;
-  top: -10px;
-  content: ' ';
-  width: 20px;
-  height: 20px;
-  transform: rotate(45deg);
-  border: 1px solid rgba(216, 213, 213, 0.5);
-  z-index: -1;
-  left: 95px;
-} */
 
 .nav-item::after {
   display: none;
@@ -93,7 +80,9 @@ nav ul {
   display: block;
 }
 
-.nav-item:hover .dropdown{
+.nav-item:hover .dropdown,
+.nav-item:active .dropdown,
+.nav-item:focus .dropdown {
   display: block;
   visibility: visible;
   opacity: 1;
@@ -140,19 +129,15 @@ nav ul {
   background: var(--app-icon-bg);
 }
 
+.company-logo {
+  display: block;
+  position: relative;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-item:hover::after {
     display: none;
   }
-
-  /* nav {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    ".menu" 
-    ".hamburger-wrapper" 
-  } */
   
   nav .grid-ui .equal-columns_2 {
     grid-template-columns: repeat(2, 1fr);
@@ -165,23 +150,40 @@ nav ul {
     top: 15%;
   }
   
-  .menu{
+  .menu {
     background: var(--app-white);
     padding-inline-start: 0;
+    height: 100vh;
+  }
+
+  nav ul {
+    margin-top: 20px;
   }
 
   nav ul li {
-    /* position: relative;
-    display: block;
-    padding: 10px 40px; */
-
     position: relative;
     display: block;
     padding: 10px 0px;
     margin-right: 10px;
   }
 
+  /* .mob-menu__view {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+
+    position: relative;
+    border: none;
+    left: 0;
+    right: 0;
+    width: 100%;
+  } */
+
   .nav-item .dropdown {
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    font-size: 14px;
     position: relative;
     border: none;
     left: 0;
@@ -190,20 +192,27 @@ nav ul {
   }
 
   .dropdown .dropdown-container {
-    /* padding: 25px; */
     padding: 2.5px;
     width: calc(100% - 5px) ;
+  }
+
+  .nav-item .nav-links .link-item .link-caption {
+    font-weight: 300;
   }
 
   .menu-toggle {
 		display:block;
 		visibility: hidden;
-	}
+  }
+  
+  .nav-menu__hd {
+    display: none;
+  }
 }
 
 /* hide the hamburger for big screens */
-@media only screen and (min-width:768px){
-  .hamburger-wrapper{
+@media only screen and (min-width:768px) {
+  .hamburger-wrapper {
     display: none;
   }
 }

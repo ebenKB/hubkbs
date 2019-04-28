@@ -1,9 +1,5 @@
 window.onload = function() {
-  // alert('the window has loaded...')
-  // fetch('https://maps.googleapis.com/maps/api/timezone/json?location=39.6034810,-119.6822510&timestamp=1331161200&key=YOUR_API_KEY')
-  // .then((data) => {
-  //   console.log('this is the data from fetch :', data)
-  // })
+  getDate();
 }
 $('document').ready(() => {
   const btn = document.getElementById('btnSubmit');
@@ -42,34 +38,43 @@ let last_known_scroll_position = 0;
 let current_pos = last_known_scroll_position;
 
 // add a scroll event listner
-window.addEventListener('scroll', () => {
-  last_known_scroll_position = current_pos;
-  current_pos = window.scrollY;
-  
-  window.requestAnimationFrame(() => {
-    // scroll down
-    if (current_pos > last_known_scroll_position) {
-          // animate nav header 
-      if (current_pos >= 300) {
-        // $('#menu').addClass('hide');
+  window.addEventListener('scroll', () => {
+    last_known_scroll_position = current_pos;
+    current_pos = window.scrollY;
+    
+    window.requestAnimationFrame(() => {
+      // scroll down
+      if (current_pos > last_known_scroll_position) {
+            // animate nav header 
+        if (current_pos >= 300) {
+          // $('#menu').addClass('hide');
 
-        // hide the menu when it is open and the user is 
-        // document.getElementById('site-header').style.setProperty('position', 'fixed');
-        document.getElementById('site-header').classList.add('addColour');
+          // hide the menu when it is open and the user is 
+          // document.getElementById('site-header').style.setProperty('position', 'fixed');
+          document.getElementById('site-header').classList.add('addColour');
+        }
+      } else {
+        // scroll up 
+        if (last_known_scroll_position - current_pos > 12) {
+          document.getElementById('site-header').classList.remove('addColour');
+        } else if (current_pos == 0) {
+          document.getElementById('site-header').classList.remove('addColour');
+        }
       }
-    } else {
-      // scroll up 
-      if (last_known_scroll_position - current_pos > 12) {
-        document.getElementById('site-header').classList.remove('addColour');
-      } else if (current_pos == 0) {
-        document.getElementById('site-header').classList.remove('addColour');
-      }
-    }
 
-    // show floating button
-    if(current_pos >= 700) {
-      document.getElementById('to-top').classList.remove('slide-out_right');
-    } else document.getElementById('to-top').classList.add('slide-out_right');
+      // show floating button
+      if(current_pos >= 700) {
+        document.getElementById('to-top').classList.remove('slide-out_right');
+      } else document.getElementById('to-top').classList.add('slide-out_right');
+    });
   });
 });
-});
+
+function getDate(){
+  fetch('http://worldclockapi.com/api/json/est/now')
+    .then((res) => res.json())
+    .then(data => {
+      const currentYr = data.ordinalDate.split('-')[0];
+      document.getElementById('current_year').innerHTML = currentYr;
+  });
+}
