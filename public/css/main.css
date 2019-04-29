@@ -1,4 +1,5 @@
 @import '../css/grid.css';
+@import '../css/image-util.css';
 @import '../css/button.css';
 @import '../css/floating-btn.css';
 @import '../css/tabs.css';
@@ -142,6 +143,10 @@ a, ul li{
   .addColour {
     -webkit-animation: addColour 0.5s ease-in-out 0s 1 forwards normal;
             animation: addColour 0.5s ease-in-out 0s 1 forwards normal;
+  }
+
+  .img-pd-l img {
+    margin-left: 130px;
   }
 }
 /* --end nav style */
@@ -410,6 +415,9 @@ a, ul li{
   color: var(--app-secondary) ;
 }
 
+.caption .invert {
+  color: var(--app-white);
+}
 /* .advert a {
   color: var(--app-white);
 } */
@@ -815,13 +823,17 @@ a, ul li{
  }
 
  .company-logo {
-   margin-top: 30px;
-   margin-left: 30px;
+  margin-top: 2px;
+  margin-left: 5px;
  }
 
  .advert .img-wrapper {
   width: 100%;
 }
+
+.hero-text__wrapper .hero-text {
+  top: 30%;
+  }
 }
 
 /* very large screens */
