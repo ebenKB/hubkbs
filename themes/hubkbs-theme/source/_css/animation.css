@@ -105,3 +105,7 @@
 		transform: translateY(0px);
 	}
 }
+
+.slow-spin {
+	animation: spin 3s ease-in 0s infinite forwards normal;
+}
