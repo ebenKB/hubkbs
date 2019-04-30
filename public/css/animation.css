@@ -220,4 +220,9 @@
 		        transform: translateY(0px);
 	}
 }
+
+.slow-spin {
+	-webkit-animation: spin 3s ease-in 0s infinite forwards normal;
+	        animation: spin 3s ease-in 0s infinite forwards normal;
+}
 /*# sourceMappingURL=animation.css.map */

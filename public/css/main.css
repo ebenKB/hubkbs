@@ -15,6 +15,7 @@
 @import '../css/hamburger.css';
 @import '../css/browser-alert.css';
 @import '../css/launch.css';
+@import '../css/promo.css';
 
 
 :root {
@@ -852,6 +853,10 @@ a, ul li{
     text-align: left;
     margin-left: 5%;
     padding: 5px 0;
+  }
+
+  .large-hero__citation .hero-text__wrapper {
+    margin-left: 5%;
   }
 }
 
