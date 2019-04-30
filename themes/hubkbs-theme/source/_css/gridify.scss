@@ -1,0 +1,308 @@
+// variables
+$one: 1;
+$two:2;
+$three:3;
+$four: 4;
+$five: 5;
+$six: 6;
+$seven: seven;
+$eight: 8;
+$nine: 9;
+$ten: 10;
+$eleven: 11;
+$twelve: 12;
+$thirteen: 13;
+$fourteen: 14;
+$fifteen: 15;
+$sixteen: 16;
+
+
+@supports (display: grid) {
+  .grid {
+    display: grid;
+  }
+}
+
+@supports not (display: grid) {
+  .grid {
+    display: flex;
+  }
+}
+
+/* wrap all grid items in this parent */
+.grid-gap__#{$ten} {
+  grid-gap: #{$ten}px;
+}
+
+// DEFINE -- equal grid columns here
+
+  .center {
+    align-items: center;
+  }
+  
+  .equal-columns__#{$two} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equal-columns__#{$three} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .equal-columns__#{$four} {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .equal-columns__#{$five} {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .equal-columns__#{$six} {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .equal-columns__#{$seven} {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .equal-columns__#{$eight} {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .equal-columns__#{$nine} {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  .equal-columns__#{$ten} {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .equal-columns__#{$eleven} {
+    grid-template-columns: repeat(11, 1fr);
+  }
+
+  .equal-columns__#{$twelve} {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .equal-columns__#{$thirteen} {
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  .equal-columns__#{$fourteen} {
+    grid-template-columns: repeat(14, 1fr);
+  }
+
+  .equal-columns__#{$fifteen} {
+    grid-template-columns: repeat(15, 1fr);
+  }
+
+  .equal-columns__#{$sixteen} {
+    grid-template-columns: repeat(16, 1fr);
+  }
+
+  .equal-columns__auto {
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .small-equal-columns__auto {
+    grid-template-columns:  repeat(auto-fit, minmax(15%, 1fr));
+  }
+
+  .medium-equal-columns__auto {
+    grid-template-columns:  repeat(auto-fit, minmax(25%, 1fr));
+  }
+
+  .large-equal-columns__auto {
+    grid-template-columns:  repeat(auto-fit, minmax(33.33%, 1fr));
+  }
+
+  .extra-large-equal-columns__auto {
+    grid-template-columns:  repeat(auto-fit, minmax(50%, 1fr));
+  }
+
+// DEFINE -- unequal grid columns here
+.auto-columns__fixed {
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.auto-columns__#{$one} {
+  grid-template-columns: 1fr;
+}
+
+.auto-columns__#{$two} {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.auto-columns__#{$three} {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.auto-columns__#{$four} {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.auto-columns__#{$five} {
+  grid-template-columns: repeat(5, 1fr)
+}
+
+.auto-columns__#{$six} {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.auto-columns__#{$seven} {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.auto-columns__#{$eight} {
+  grid-template-columns: repeat(8, 1fr);
+}
+.auto-columns__#{$nine} {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.auto-columns__#{$ten} {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.auto-columns__#{$eleven} {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.auto-columns__#{$twelve} {
+  grid-template-columns: repeat(12, 1fr);
+}
+.auto-columns__#{$thirteen} {
+  grid-template-columns: repeat(13, 1fr);
+}
+
+.auto-columns__#{$fourteen} {
+  grid-template-columns: repeat(14, 1fr);
+}
+.auto-columns__#{$fifteen} {
+  grid-template-columns: repeat(15, 1fr);
+}
+
+// START   comment
+// .auto-columns__fixed,
+// .auto-columns__#{$one},
+// .auto-columns__#{$two},
+// .auto-columns__#{$three},
+// .auto-columns__#{$four},
+// .auto-columns__#{$five},
+// .auto-columns__#{$six},
+// .auto-columns__#{$seven},
+// .auto-columns__#{$eight},
+// .auto-columns__#{$nine},
+// .auto-columns__#{$ten},
+// .auto-columns__#{$eleven},
+// .auto-columns__#{$twelve},
+// .auto-columns__#{$thirteen},
+// .auto-columns__#{$fourteen},
+// .auto-columns__#{$fifteen} 
+
+  .auto {
+    .one {
+      grid-column: span 1;
+    }
+
+    .two {
+      grid-column: span 2;
+    }
+  
+    .three {
+      grid-column: span 3;
+    }
+
+    .four {
+      grid-column: span 4;
+    }
+
+    .five {
+      grid-column: span 5;
+    }
+
+    .six {
+      grid-column: span 6;
+    }
+
+    .seven {
+      grid-column:  span 7;
+    }
+
+    .eight {
+      grid-column: span 8;
+    }
+
+    .nine {
+      grid-column:  span 9;
+    }
+
+    .ten {
+      grid-column: span 10;
+    }
+
+    .eleven {
+      grid-column: span 11;
+    }
+
+    .twelve {
+      grid-column:  span 12 ;
+    }
+
+    .thirteen {
+      grid-column: span 13;
+    }
+
+    .fourteen {
+      grid-column: span 14;
+    }
+
+    .fifteen {
+      grid-column:  span 15;
+    }
+
+    .sixteen {
+      grid-column: span 16;
+    }
+  }
+
+
+// END comment
+// GRID -- rows 
+
+
+.grid {
+  .rows__#{$two} {
+    grid-template-rows: #{$two};
+    grid-row-gap: 10px;
+  }
+
+  .rows__#{$four} {
+    grid-template-rows: #{$four};
+    grid-row-gap: 10px;
+  }
+}
+
+// for medium screens 
+@media only screen and(max-width:768px) {
+
+.equal-columns__#{$two},
+.equal-columns__#{$three},
+.equal-columns__#{$four},
+.equal-columns__#{$five},
+.equal-columns__#{$six},
+.equal-columns__#{$seven},
+.equal-columns__#{$eight},
+.equal-columns__#{$nine},
+.equal-columns__#{$ten},
+.equal-columns__#{$eleven},
+.equal-columns__#{$twelve} {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 20px;
+}
+
+.grid-auto__columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+}

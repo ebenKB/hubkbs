@@ -1,4 +1,5 @@
 @import '../css/grid.css';
+@import '../css/gridify.css';
 @import '../css/image-util.css';
 @import '../css/button.css';
 @import '../css/floating-btn.css';
@@ -800,6 +801,10 @@ a, ul li{
       margin-top: 0;
   }
 
+  .user-form:nth-child(2n+1) {
+    margin-bottom: 20px;
+  }
+
   .user-account .equal-columns_2 div:nth-child(1) {
       margin-top: 20px;
   }
@@ -822,7 +827,21 @@ a, ul li{
 }
 
 .hero-text__wrapper .hero-text {
+  width: 90%;
+  margin: auto;
   top: 30%;
+}
+
+  .medium-hero__printing {
+    background-position: 35%;
+  }
+
+  .small-hero .hero-text__wrapper .hero-text {
+    width: 85%;
+    margin-top: 9.5%;
+    text-align: left;
+    margin-left: 5%;
+    padding: 5px 0;
   }
 }
 

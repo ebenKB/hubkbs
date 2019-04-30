@@ -153,7 +153,11 @@ nav ul {
   .menu {
     background: var(--app-white);
     padding-inline-start: 0;
-    height: 100vh;
+    /* height: 100vh; */
+  }
+
+  nav {
+    height: 40px;
   }
 
   nav ul {
@@ -208,6 +212,10 @@ nav ul {
   .nav-menu__hd {
     display: none;
   }
+
+  .site-header .grid-ui .grid-auto_columns .thirteen {
+    grid-column: auto;
+}
 }
 
 /* hide the hamburger for big screens */

@@ -26,6 +26,11 @@
     margin-left: 37.5%;
 }
 
+.img-sm__pad-center {
+    width: 25%;
+    margin-left: 37.5%;
+}
+
 .img-lg {
     width: 50%;
     margin-left: 25%;
@@ -71,7 +76,12 @@
 }
 
 @media only screen and (max-width: 768px){
-    .img-xxl {
+    /* .img-xxl {
         width: 35%;
+    } */
+
+    .img-xxl {
+        width: 90%;
+        margin-left: 2.5%;
     }
 }
