@@ -22,6 +22,7 @@
   <script src="/js/mailer.js"></script>
   <script src="/js/core.js"></script>
   <script src="/js/hamburger.js"></script>
+  <!-- <script src="/js/popup.js"></script> -->
 </head>
 </html>
 <body id="home">
@@ -179,7 +180,20 @@
         </div>
     </header>
     <main>
-        <div class="small-hero small-hero__citation">
+        <div class="promo-backdrop hide" id="add-popup">
+    <div class="promo-content">
+        <div class="promo-close" id="promo-close"> <img src="/images/icons/cancel.svg" alt> </div>
+        <div class="promo-title"> Discount </div>
+        <div class="promo-body">
+            <img src="/images/bg/bag.svg" alt>
+            <h1 class="m-t-20">Book an appointment for research at a reduced price </h1>
+            <div class="m-t-80">
+            <a href="/sales" class="btn primary">Contact Sales</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="small-hero small-hero__citation">
   
     <div class="hero-text__wrapper ">
       <div class="hero-text"> <h1>Our Services </h1> </div>
@@ -329,6 +343,7 @@
     </div>
   </div>
 </section>
+<script src="../js/popup.js"></script>
     </main>
 
     <div class="to-top slide-out_right" id="to-top">
