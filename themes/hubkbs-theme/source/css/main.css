@@ -853,6 +853,10 @@ a, ul li{
     margin-left: 5%;
     padding: 5px 0;
   }
+
+  .large-hero__citation .hero-text__wrapper {
+    margin-left: 5%;
+  }
 }
 
 /* very large screens */
