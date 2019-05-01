@@ -108,6 +108,7 @@ a, ul li{
   left: 0;
   right: 0;
   position: fixed;
+  color: #fff;
 }
 
 #home .site-header {
@@ -677,7 +678,8 @@ a, ul li{
 /* END animate data-scroll */
 @media only screen and (min-width:769px) {
   #home .site-header {
-      background: var(--app-white);
+      /* background: var(--app-white); */
+      background: var(--app-primary);
   }
 }
 

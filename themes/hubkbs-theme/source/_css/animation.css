@@ -20,12 +20,13 @@
 
 @keyframes addColour {
 	0% {
-		background:  var( --app-white);
+		/* background:  var( --app-white); */
+		background:  var( --app-primary);
 	}
 
 	100% {
-		background: var(--app-secondary);
-		color: var( --app-white);
+		/* background: var(--app-secondary); */
+		background:  var( --app-primary);
 	}
 }
 
