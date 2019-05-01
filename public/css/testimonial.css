@@ -1,0 +1,21 @@
+.col {
+    width: 70%;
+    margin: auto;
+}
+
+.testimonial-divider {
+    width: 16px;
+    height: 1px;
+    background: #9E9E9E;
+    margin: 15px auto;
+}
+
+.testimonial-title {
+    font-weight: 900;
+    font-size: 12px;
+}
+
+.caption .testimonial-body p{
+    font-size: 14px;
+}
+/*# sourceMappingURL=testimonial.css.map */
