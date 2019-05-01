@@ -3,6 +3,11 @@
     margin: auto;
 }
 
+
+.col-fit {
+    width: 100%;
+}
+
 .testimonial-divider {
     width: 16px;
     height: 1px;

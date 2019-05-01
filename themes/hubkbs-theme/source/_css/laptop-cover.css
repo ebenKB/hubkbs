@@ -98,9 +98,10 @@
    */
   .img-grid_item:hover img {
     /* width: 100%; */
-    margin-left: 0;
+    /* margin-left: 0;
     margin-right: 0;
-    padding: 2.5px;
+    padding: 2.5px; */
+    /* opacity: 1; */
   }
   
   .samples-container {
@@ -131,6 +132,7 @@
     right: 88%;
     top: -16px;
     visibility: hidden;
+    z-index: 1;
   }
   
   .sample:hover::before {
@@ -141,3 +143,9 @@
     padding-bottom: 50px;
 }
   /* END --laptop covers syle */
+
+
+  .price-tag {
+      background: #000;
+      height: 250px;
+  }
