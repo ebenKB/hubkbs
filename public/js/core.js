@@ -1,3 +1,5 @@
+const isLogoOK = true;
+
 window.onload = function() {
   getDate();
 }
@@ -57,6 +59,7 @@ let current_pos = last_known_scroll_position;
         // scroll up 
         if (last_known_scroll_position - current_pos > 12) {
           document.getElementById('site-header').classList.remove('addColour');
+          
         } else if (current_pos == 0) {
           document.getElementById('site-header').classList.remove('addColour');
         }
@@ -78,3 +81,16 @@ function getDate(){
       document.getElementById('current_year').innerHTML = currentYr;
   });
 }
+
+function swapLogo(){
+  const logo_1 = document.getElementById('logo-1');
+  const logo_2 = document.getElementById('logo-2');
+
+  if(logo_1.classList.contains('hide')) {
+    logo_1.classList.remove('hide');
+    logo_2.classList.add('hide');
+  } else {
+    logo_1.classList.add('hide');
+    logo_2.classList.remove('hide');
+  }
+};
