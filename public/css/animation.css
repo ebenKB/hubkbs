@@ -225,4 +225,33 @@
 	-webkit-animation: spin 3s ease-in 0s infinite forwards normal;
 	        animation: spin 3s ease-in 0s infinite forwards normal;
 }
+
+@-webkit-keyframes move-up {
+	0% {
+		-webkit-transform: translateY(50px);
+		        transform: translateY(50px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+}
+
+@keyframes move-up {
+	0% {
+		-webkit-transform: translateY(50px);
+		        transform: translateY(50px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-20px);
+		        transform: translateY(-20px);
+	}
+}
+
+.move {
+	-webkit-animation: move-up 3s ease-in 0s 1 forwards normal;
+	        animation: move-up 3s ease-in 0s 1 forwards normal;	
+}
 /*# sourceMappingURL=animation.css.map */
