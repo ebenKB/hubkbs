@@ -4,6 +4,7 @@ $("document").ready(() => {
     }, 2500);
   });
 
-  $("#promo-close").on('click', (() =>{
+  $("#promo-close").on('click', (() => {
     $('#add-popup').addClass('hide');
+    console.log('you want to close the addd')
   }));
