@@ -30,12 +30,15 @@
 
 .promo-close {
     position: absolute;
+    padding: 15px 0;
     top: 20px;
-    left: 95%;
+    left: 90%;
+    z-index: 110;
+    /* background: red */
 }
 
 .promo-close img {
-    height: 20px;
+    height: 30px;
 }
 
 .promo-title {
@@ -58,7 +61,7 @@
 
 @media only screen and (max-width: 768px) {
     .promo-content {
-        position: absolute;
+        position: relative;
         top: 10px;
         width: 90%;
         margin-left: 5%;
@@ -66,7 +69,7 @@
 
     .promo-body {
         width: 100%;
-        margin-top: 80px;
+        margin-top: 20px;
         position: relative;
     }
 
@@ -74,11 +77,15 @@
         width: 80%;
         position: absolute;
         left: 20px;
-        top: -30px;
+        top: -40px;
     }
 
     .promo-close {
-        left: 86%;
+        /* left: 86%; */
+        left: 0;
+        position: relative;
+        text-align: right;
+        margin-right: 23px;
     }
 }
 

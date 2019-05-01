@@ -255,6 +255,12 @@ $sixteen: 16;
       }
     }
   }
+
+  nav .grid-ui .grid-auto_columns {
+    grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 // very small devices 

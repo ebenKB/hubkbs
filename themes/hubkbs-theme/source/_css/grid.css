@@ -170,6 +170,12 @@
   footer .grid-ui .equal-columns_4 {
     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
   }
+
+  nav .grid-ui .grid-auto_columns {
+    grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media only screen and (max-width: 320px) {
   footer .grid-ui .equal-columns_4 {

@@ -144,6 +144,12 @@ nav ul {
     grid-row-gap: 0;
   }
 
+  nav .grid-ui .grid-auto_columns {
+    grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
   .hamburger-wrapper {
     position: absolute;
     right: 10%;
