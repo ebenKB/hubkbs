@@ -1,10 +1,11 @@
 .carousel {
   position: relative;
-  background: red;
-  height: 400px;
-  background: linear-gradient(0deg, rgba(187, 182, 185, 0.3), rgba(212, 212, 212, 0.3)), url("../images/bg/cover-bg_1.jpg");
+  height: 680px;
+  padding: 20px 0;
+  background: linear-gradient(0deg, rgba(187, 182, 185, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero/laptop-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .carousel-item {
@@ -17,6 +18,20 @@
   height: 100%;
 }
 
-/*# sourceMappingURL=carousel.css.map */
+.carousel .hero-text__wrapper .hero-text {
+  margin-top: 25%;
+}
 
+
+.carousel .hero-text__wrapper .hero-text p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 320px;
+  }
+}
 /*# sourceMappingURL=carousel.css.map */

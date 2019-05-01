@@ -109,3 +109,17 @@
 .slow-spin {
 	animation: spin 3s ease-in 0s infinite forwards normal;
 }
+
+@keyframes move-up {
+	0% {
+		transform: translateY(50px);
+	}
+
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+.move {
+	animation: move-up 3s ease-in 0s 1 forwards normal;	
+}

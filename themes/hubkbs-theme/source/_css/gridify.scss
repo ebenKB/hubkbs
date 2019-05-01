@@ -34,6 +34,10 @@ $sixteen: 16;
   grid-gap: #{$ten}px;
 }
 
+.grid-gap__30 {
+  grid-gap: 30px;
+}
+
 // DEFINE -- equal grid columns here
 
   .center {
@@ -43,6 +47,7 @@ $sixteen: 16;
   .equal-columns__#{$two} {
     grid-template-columns: repeat(2, 1fr);
   }
+
 
   .equal-columns__#{$three} {
     grid-template-columns: repeat(3, 1fr);
@@ -304,5 +309,24 @@ $sixteen: 16;
 .grid-auto__columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+
+.auto-columns__fixed,
+.auto-columns__#{$one},
+.auto-columns__#{$two},
+.auto-columns__#{$three},
+.auto-columns__#{$four},
+.auto-columns__#{$five},
+.auto-columns__#{$six},
+.auto-columns__#{$seven},
+.auto-columns__#{$eight},
+.auto-columns__#{$nine},
+.auto-columns__#{$ten},
+.auto-columns__#{$eleven},
+.auto-columns__#{$twelve},
+.auto-columns__#{$thirteen},
+.auto-columns__#{$fourteen},
+.auto-columns__#{$fifteen} {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }

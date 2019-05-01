@@ -1,0 +1,143 @@
+.laptop-cover__wrapper {
+    background: #f0f0f0;
+}
+
+.card {
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.05);
+}
+
+.card-text {
+    font-family: ArcherItalic;
+    font-style: italic;
+}
+
+.card-image:hover {
+    opacity: 0.85;
+}
+
+.card-text,
+.card-title {
+    padding: 0 30px;
+}
+
+.card-title h2 {
+    font-size: 16px;
+}
+
+.col-1-3 {
+    position: relative;
+}
+
+.card-caption {
+    position: absolute;
+    background: rgba(0,0,0,0.50);
+    width: 100%;
+    top: 82%;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: right;
+    display: none;
+}
+
+.laptop-cover__wrapper .col-1-3:hover .card-caption {
+    display: block;
+    animation: move-up .3s ease-in 0s 1 forwards normal;
+    transition: all 0.3s ease-in-out;
+}
+
+/* END -- utilites here */
+
+/* START item showcase */
+.item-showcase img {
+    width: 100%;
+  }
+  /* END item showcase */
+  
+  /* START -- laptop covers page style */
+  .cover {
+    position: relative;
+    border-top: 1px solid var (--app-faint-line);
+  }
+  
+  .cover::before {
+    position: absolute;
+    content: attr(category);
+    background: var(--app-primary);
+    color: var(--app-white);
+    top: -40px;
+    padding: 10px;
+    border-radius: 2.5px;
+    z-index: 1;
+  }
+  
+  .img-grid_item {
+    position: relative;
+    background: var(--app-white);
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+  }
+  
+  .img-grid_item img {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
+  }
+  
+  .samples-container .img-grid_item img {
+    width: 100%;
+    margin: 0;
+  }
+  
+  /* .img-grid_item:hover {
+    border: 1px solid var(--app-primary-light);
+    transform: scale(1.2);
+    transition: transform 0.35s ease-in-out;
+    z-index: 3;
+  }
+   */
+  .img-grid_item:hover img {
+    /* width: 100%; */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 2.5px;
+  }
+  
+  .samples-container {
+    position: relative;
+  }
+  
+  .sample {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .sample::before {
+    content: attr(number);
+    position: absolute;
+    background: var(--app-primary-light);
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    right: 88%;
+    top: -16px;
+    visibility: hidden;
+  }
+  
+  .sample:hover::before {
+    visibility: visible;
+  }
+
+.laptop-cover__wrapper .p-b-100 {
+    padding-bottom: 50px;
+}
+  /* END --laptop covers syle */

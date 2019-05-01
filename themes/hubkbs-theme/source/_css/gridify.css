@@ -13,6 +13,10 @@
   grid-gap: 10px;
 }
 
+.grid-gap__30 {
+  grid-gap: 30px;
+}
+
 .center {
   align-items: center;
 }
@@ -238,6 +242,25 @@
   .grid-auto__columns {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  }
+
+  .auto-columns__fixed,
+.auto-columns__1,
+.auto-columns__2,
+.auto-columns__3,
+.auto-columns__4,
+.auto-columns__5,
+.auto-columns__6,
+.auto-columns__seven,
+.auto-columns__8,
+.auto-columns__9,
+.auto-columns__10,
+.auto-columns__11,
+.auto-columns__12,
+.auto-columns__13,
+.auto-columns__14,
+.auto-columns__15 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
