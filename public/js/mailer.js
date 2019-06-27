@@ -19,6 +19,7 @@ window.addEventListener('load', (() => {
                 .then((data) => {
                     if(data.status == 200) {
                         // message sent successfully
+                        $('#btnSubmit').text("Send message");
                         showStatus();
                     }
                 })
@@ -30,5 +31,5 @@ window.addEventListener('load', (() => {
 }));
 
 function showStatus() {
-
+  alert ("Thank you. Your message has been sent.")
 }
