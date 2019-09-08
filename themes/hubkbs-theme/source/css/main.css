@@ -75,7 +75,11 @@ a {
   color: var(--app-black);
 }
 
-a, ul li{
+.link__action a {
+  color: #fff;
+}
+
+a, ul li {
   text-decoration: none;
   background: transparent;
 }
