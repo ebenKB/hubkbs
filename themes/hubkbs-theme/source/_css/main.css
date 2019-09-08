@@ -76,7 +76,7 @@ a {
 }
 
 .link__action a {
-  color: #fff;
+  color: var(--app-white);
 }
 
 a, ul li {
