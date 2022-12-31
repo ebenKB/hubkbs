@@ -1,0 +1,123 @@
+.promo-backdrop {
+    position: fixed;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    z-index: 101;
+    /* margin-left: 10%; */
+    overflow: hidden;
+}
+
+.promo-content {
+    position: absolute;
+    top: 20%;
+    min-height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    background: #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.promo-body {
+    padding: 30px;
+}
+
+.promo-content h1 {
+    font-size: 40px;
+}
+
+.promo-close {
+    position: absolute;
+    padding: 15px 0;
+    top: 20px;
+    left: 90%;
+    z-index: 110;
+    /* background: red */
+}
+
+.promo-close img {
+    height: 30px;
+}
+
+.promo-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 10px;
+    color: red;
+}
+
+
+.promo-end {
+    font-size: 14px;
+    color: red;
+    position: relative;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .promo-content {
+        position: relative;
+        top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .promo-body {
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .promo-body img {
+        width: 80%;
+        position: absolute;
+        left: 20px;
+        top: -40px;
+    }
+
+    .promo-close {
+        /* left: 86%; */
+        left: 0;
+        position: relative;
+        text-align: right;
+        margin-right: 23px;
+    }
+}
+
+/* for ipad */
+@media only screen and (min-width: 768px)  and (max-width: 1024px){
+    .promo-body img {
+        width: 80%;
+        position: absolute;
+        left: 84px;
+        top: -103px;
+    }
+
+    .promo-content {
+        top: 150px;
+    }
+}
+
+/* for ipad pro */
+@media only screen and (min-width: 1024px)  and (max-width: 1366px){
+    .promo-body img {
+        width: 80%;
+        position: absolute;
+        left: 84px;
+        top: 70px;
+    }
+
+    .promo-content {
+        top: 150px;
+    }
+
+    .promo-close {
+        left: 90%;
+    }
+}
+/*# sourceMappingURL=promo.css.map */

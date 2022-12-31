@@ -1,0 +1,37 @@
+.carousel {
+  position: relative;
+  height: 680px;
+  padding: 20px 0;
+  background: linear-gradient(0deg, rgba(187, 182, 185, 0.3), rgba(0, 0, 0, 0.3)), url("../images/hero/tribal-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.carousel .hero-text__wrapper .hero-text {
+  margin-top: 25%;
+}
+
+
+.carousel .hero-text__wrapper .hero-text p {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .carousel {
+    height: 320px;
+  }
+}
+/*# sourceMappingURL=carousel.css.map */
