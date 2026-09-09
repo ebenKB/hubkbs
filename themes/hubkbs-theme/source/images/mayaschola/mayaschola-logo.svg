@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- M Structure -->
+  <path
+    d="M10 80 V30 L45 55 L80 30 V80"
+    fill="none"
+    stroke="#0074ff"
+    stroke-width="12"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- S Curve -->
+  <path
+    d="M45 85 Q75 85 85 65 T55 35 Q40 15 70 5"
+    fill="none"
+    stroke="#ffb300"
+    stroke-width="8"
+    stroke-linecap="round"
+    opacity="0.9"
+  />
+
+  <!-- Spark -->
+  <path d="M85 15 L90 5 L95 15 L85 10 Z" fill="#ffb300" />
+  <circle cx="90" cy="10" r="3" fill="#ffb300" />
+</svg>
