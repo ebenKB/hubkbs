@@ -242,6 +242,35 @@ a, ul li {
   url("../images/bg/citation-in-room.jpg");
 }
 
+.small-hero__privacy {
+  background-image:linear-gradient(
+		rgba(5, 5, 5, 0.35),
+		rgba(5, 5, 5, 0.65)
+  ),
+  url("../images/bg/handshake-african.jpg");
+  background-position: center 45%;
+}
+
+.small-hero__mayaschola {
+  background-image:linear-gradient(
+		rgba(5, 5, 5, 0.35),
+		rgba(5, 5, 5, 0.7)
+  ),
+  url("../images/bg/ghana-classroom.jpg");
+  background-position: center 35%;
+  height: 400px;
+}
+
+/* the shared small-hero offset (top 50% + 9.5% margin) pushes the heading
+   past the 300px hero on wide screens; anchor it to the bottom instead */
+.small-hero__privacy .hero-text__wrapper .hero-text,
+.small-hero__mayaschola .hero-text__wrapper .hero-text {
+  top: auto;
+  bottom: 30px;
+  margin-top: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
 .hero-text__wrapper .hero-text{
   position: absolute;
   /* margin-top: 23%; */
@@ -536,6 +565,74 @@ a, ul li {
   margin-right: 2.5%;
 }
 /* ene about page style */
+
+/* style privacy page */
+.privacy h2 {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 36px;
+}
+
+.privacy .privacy-updated {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--app-default);
+}
+
+.privacy a {
+  color: var(--app-secondary);
+}
+
+/* the global reset strips list markers, restore them for readability */
+.privacy .privacy-list {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+  margin-top: 10px;
+}
+
+.privacy .privacy-list li {
+  list-style: disc;
+  text-align: left;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+/* end privacy page style */
+
+/* style mayaschola page */
+.mayaschola .maya-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.mayaschola .maya-logo {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+}
+
+.mayaschola .maya-wordmark {
+  font-size: 28px;
+  color: #0074ff;
+  letter-spacing: -0.5px;
+}
+
+.mayaschola .maya-wordmark strong {
+  color: #f5a623;
+  font-weight: 400;
+}
+
+/* .caption a is more specific than .primary, which would paint the button
+   label the same blue as its background */
+.mayaschola .caption a.btn.primary {
+  color: var(--app-white);
+  display: inline-block;
+}
+/* end mayaschola page style */
 
 /* START-- media caption here */
   .media-caption {
